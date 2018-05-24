@@ -1,0 +1,34 @@
+.bar-container {
+	display: block;
+	position: relative;
+	width: 100%;
+	background-color: #D3CCCC;
+	margin-top: 2%;
+}
+.bar-fill {
+	display: block;
+	position: relative;
+	background-color: #9B9BD2;
+	padding: 3%;
+	height: inherit;
+}
+.label {
+	background-color: #6C6CB3;
+	position: absolute;
+	top:0%;
+	left: 0%;
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	/*vertical-align: 500%;*/
+}
+.label-text {
+	position: relative;
+	display: block;
+	top: 20%;
+}
+.percentage {
+	position: absolute;
+	right: 0%;
+	top: 20%;
+}

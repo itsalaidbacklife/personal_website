@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  /*font-size: 100%;*/
+}
+#header {
+  text-align: center;
+  margin-bottom: 3%;
+}
+a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+a:visited, a:link {
+  color: #607D8B;
+}
+a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+a.active {
+  color: #039be5;
+}

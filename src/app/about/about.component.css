@@ -1,0 +1,28 @@
+h2 {
+	text-align: center;
+}
+#container {
+	height: 500px;
+	width: 100%;
+}
+#spiel {
+	display: inline-block;
+	margin-left: 4%;
+	position: relative;
+	text-align: center;
+	width: 33%;
+}
+
+#skills {
+	display: inline-block;
+	position: absolute;
+	left: 48%;
+	width: 30%;
+}
+#skillLabel {
+	text-align: center;
+}
+#logo {
+	width: 30%;
+	position: relative;
+}
