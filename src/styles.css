@@ -3,12 +3,14 @@
 }
 
 h1 {
-  color: #369;
+  /*color: #369;*/
+  color: #E5E5E5;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
 h2, h3 {
-  color: #444;
+  /*color: #444;*/
+  color: #E5E5E5;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   /*font-size: 100%;*/
@@ -34,4 +36,9 @@ a:hover {
 }
 a.active {
   color: #039be5;
+}
+
+html {
+  background: radial-gradient(circle, #FFC14C, #5252D6);
+  color: #E5E5E5;
 }
