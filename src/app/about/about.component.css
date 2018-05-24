@@ -11,6 +11,7 @@ h2 {
 	position: relative;
 	text-align: center;
 	width: 33%;
+	font-size: 16pt;
 }
 
 #skills {
@@ -18,9 +19,11 @@ h2 {
 	position: absolute;
 	left: 48%;
 	width: 30%;
+	font-weight: bold;
 }
 #skillLabel {
 	text-align: center;
+	font-size: 16pt;
 }
 #logo {
 	width: 30%;
