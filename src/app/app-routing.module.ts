@@ -5,9 +5,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 const routes: Routes = [
 	{ path: '', component: AboutComponent },
-	{ path: 'about', component: AboutComponent },
-	{ path: 'portfolio', component: PortfolioComponent },
-	{ path: 'contact', component: ContactComponent },
+	{ path: 'about', component: AboutComponent, data: {state: 'about'} },
+	{ path: 'portfolio', component: PortfolioComponent, data: {state: 'portfolio'} },
+	{ path: 'contact', component: ContactComponent, data: {state: 'contact'} },
 ]
 @NgModule({
 	imports: [ RouterModule.forRoot(routes) ],
