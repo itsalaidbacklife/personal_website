@@ -1,9 +1,11 @@
 h2 {
 	text-align: center;
 }
-#container {
+#aboutContainer {
 	height: 500px;
 	width: 100%;
+	position: relative;
+	left: 5%;
 }
 #spiel {
 	display: inline-block;
