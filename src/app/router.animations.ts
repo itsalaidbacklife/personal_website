@@ -30,7 +30,7 @@ export const routerTransition = trigger('routerTransition', [
     /* 2 */ group([  // block executes in parallel
       query(':enter #aboutContainer,  :enter #portfolioContainer', [
         style({ transform: 'translateX(100%)' }),
-        animate('0.5s ease-out', style({ transform: 'translateX(-5px)', position: 'relative' }))
+        animate('0.5s ease-out', style({ transform: 'translateX(0px)', position: 'relative' }))
       ], { optional: true }),
 
       query(':enter #contactContainer', [
@@ -42,12 +42,21 @@ export const routerTransition = trigger('routerTransition', [
         style({ transform: 'translateX(0%)' }),
         animate('0.5s ease-in-out', style({ transform: 'translateX(-100%)', position: 'fixed' }))
       ], { optional: true }),
-      query(':enter .entryWrapper', stagger(400, [
+      // query(':enter .entryWrapper', stagger(400, [
+      //   style({ transform: 'translateY(100%)'}),
+      //   animate('1s ease-in-out',
+      //     style({ transform: 'translateY(0%)', opacity: 1})
+      //     )
+      //   ]), {optional: true}) //End query for :enter .entryWrapper
+
+
+      query(':enter .entryWrapper', [
         style({ transform: 'translateY(100%)'}),
         animate('1s ease-in-out',
           style({ transform: 'translateY(0%)', opacity: 1})
           )
-        ]), {optional: true}) //End query for :enter .entryWrapper
+        ], {optional: true})
+
 
       // query(':enter .entryWrapper', [
       // 	style({transform: 'translateY(100%)'}),

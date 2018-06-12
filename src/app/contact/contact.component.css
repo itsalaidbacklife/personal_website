@@ -19,6 +19,6 @@ a {
 /*Small Screens only*/
 @media screen and (max-width: 600px) {
 	p {
-		font-size: 14pt;
+		font-size: 11pt;
 	}
 }
