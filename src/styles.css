@@ -28,8 +28,8 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
+  /*background-color: #eee;*/
+  /*border-radius: 4px;*/
 }
 a:visited, a:link {
   color: #607D8B;

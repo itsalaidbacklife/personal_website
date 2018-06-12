@@ -1,3 +1,4 @@
+/*All Screens*/
 h2 {
 	text-align: center;
 }
@@ -7,28 +8,63 @@ h2 {
 	position: relative;
 	left: 5%;
 }
-#spiel {
-	display: inline-block;
-	margin-left: 4%;
-	position: relative;
-	text-align: center;
-	width: 33%;
-	font-size: 16pt;
-}
-
-#skills {
-	display: inline-block;
-	position: absolute;
-	left: 48%;
-	width: 30%;
-	font-weight: bold;
-}
 #skillLabel {
 	text-align: center;
 	font-size: 16pt;
 }
-#logo {
-	width: 30%;
-	border-radius: 3%;
-	position: relative;
+
+/*Large Screens only*/
+@media screen and (min-width: 900px) {
+	#spiel {
+		display: inline-block;
+		margin-left: 4%;
+		position: relative;
+		text-align: center;
+		width: 33%;
+		font-size: 16pt;
+	}
+	#skills {
+		display: inline-block;
+		/*position: relative;*/
+		position: absolute;
+		/*left: 48%;*/
+		margin-left: 15%;
+		width: 30%;
+		font-weight: bold;
+	}
+	#logo {
+		width: 30%;
+		border-radius: 3%;
+		position: relative;
+	}
+}
+
+/*Small screens only*/
+@media screen and (max-width: 900px) {
+	#spiel {
+		display: block;
+		position: relative;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 5%;
+		text-align: center;
+		font-size: 15pt;
+	}
+	#logo {
+		width: 80%;
+		border-radius: 3%;
+		position: relative;
+	}
+	#skills {
+		display: block;
+		position: relative;
+		width: 50%;
+		font-weight: bold;
+		/*border: 2px solid white;*/
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
 }

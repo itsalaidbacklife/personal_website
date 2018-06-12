@@ -32,3 +32,17 @@
 	right: 0%;
 	top: 20%;
 }
+
+@media screen and (max-width: 600px) and (min-width: 400px){
+	.bar-fill {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.bar-fill {
+		padding-top: 8%;
+		padding-bottom: 8%;
+	}
+}
