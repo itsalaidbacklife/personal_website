@@ -9,6 +9,7 @@ export class PortfolioEntryComponent implements OnInit {
 	@Input() title: string;
 	@Input() img: string;
 	@Input() txt: string;
+	@Input() txt2: string;
 	@Input() linkText: string;
 	@Input() link: string;
 	constructor() { }
