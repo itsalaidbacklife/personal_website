@@ -45,9 +45,9 @@ a.active {
 html {
   /*background: radial-gradient(circle, #FFC14C, #5252D6);*/
   color: #E5E5E5;
-  background-image: url("./assets/dance.jpg");
+  /*background-image: url("./assets/dance.jpg");*/
   background-repeat: no-repeat;
-  background-color: #000;
+  background-color: #0E0826;
   z-index: -1;
   padding: none;
   margin: none;

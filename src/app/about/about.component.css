@@ -14,7 +14,7 @@ h2 {
 }
 
 /*Large Screens only*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
 	#spiel {
 		display: inline-block;
 		margin-left: 4%;
@@ -40,7 +40,7 @@ h2 {
 }
 
 /*Small screens only*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 	#spiel {
 		display: block;
 		position: relative;
