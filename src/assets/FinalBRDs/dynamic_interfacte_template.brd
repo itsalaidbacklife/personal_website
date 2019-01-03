@@ -109,38 +109,6 @@
             <verb>NotePropertySet</verb>
             <properties>
                 <MessageType>InterfaceAction</MessageType>
-                <transaction_id>8658f2a1-4758-978f-9fff-247b746fa09d</transaction_id>
-                <Selection>
-                    <value>weight_in_kg_expansion_prompt3</value>
-                </Selection>
-                <Action>
-                    <value>UpdateTextArea</value>
-                </Action>
-                <Input>
-                    <value>kilograms.</value>
-                </Input>
-            </properties>
-        </message>
-        <message>
-            <verb>NotePropertySet</verb>
-            <properties>
-                <MessageType>InterfaceAction</MessageType>
-                <transaction_id>77994b52-1759-5960-e3ec-1803c500c9c6</transaction_id>
-                <Selection>
-                    <value>weight_in_kg_expansion_prompt4</value>
-                </Selection>
-                <Action>
-                    <value>UpdateTextArea</value>
-                </Action>
-                <Input>
-                    <value>So we need to</value>
-                </Input>
-            </properties>
-        </message>
-        <message>
-            <verb>NotePropertySet</verb>
-            <properties>
-                <MessageType>InterfaceAction</MessageType>
                 <transaction_id>b0798351-e032-8958-bf60-bdb302351749</transaction_id>
                 <Selection>
                     <value>dose_in_mg_expansion_header</value>
@@ -221,22 +189,6 @@
             <verb>NotePropertySet</verb>
             <properties>
                 <MessageType>InterfaceAction</MessageType>
-                <transaction_id>e9bfb2d3-1b9a-0aac-22d3-89ee8ef475e5</transaction_id>
-                <Selection>
-                    <value>weight-in-pounds-prompt</value>
-                </Selection>
-                <Action>
-                    <value>UpdateTextArea</value>
-                </Action>
-                <Input>
-                    <value>%(pet)%'s weight in pounds:</value>
-                </Input>
-            </properties>
-        </message>
-        <message>
-            <verb>NotePropertySet</verb>
-            <properties>
-                <MessageType>InterfaceAction</MessageType>
                 <transaction_id>0de81a1a-d6c0-46dc-808c-1d51c4284b19</transaction_id>
                 <Selection>
                     <value>weight_in_pounds_expansion_prompt1</value>
@@ -294,22 +246,6 @@
                 </Action>
                 <Input>
                     <value>Find the %(pet)%'s weight in kg</value>
-                </Input>
-            </properties>
-        </message>
-        <message>
-            <verb>NotePropertySet</verb>
-            <properties>
-                <MessageType>InterfaceAction</MessageType>
-                <transaction_id>5931543d-bddb-3be2-ead0-e6f35bb07f7f</transaction_id>
-                <Selection>
-                    <value>weight_in_kg_expansion_prompt1</value>
-                </Selection>
-                <Action>
-                    <value>UpdateTextArea</value>
-                </Action>
-                <Input>
-                    <value>The %(pet)% weighs</value>
                 </Input>
             </properties>
         </message>
@@ -586,6 +522,70 @@
             </properties>
         </message>
         <message>
+            <verb>NotePropertySet</verb>
+            <properties>
+                <MessageType>InterfaceAction</MessageType>
+                <transaction_id>eead3481-c767-e437-0af8-107937a4c65b</transaction_id>
+                <Selection>
+                    <value>weight-in-pounds-prompt</value>
+                </Selection>
+                <Action>
+                    <value>UpdateTextArea</value>
+                </Action>
+                <Input>
+                    <value>%(pet)%'s weight in lbs:</value>
+                </Input>
+            </properties>
+        </message>
+        <message>
+            <verb>NotePropertySet</verb>
+            <properties>
+                <MessageType>InterfaceAction</MessageType>
+                <transaction_id>08f9aca8-bc44-a27c-c7c2-e3d54b9930c8</transaction_id>
+                <Selection>
+                    <value>weight_in_kg_expansion_prompt3</value>
+                </Selection>
+                <Action>
+                    <value>UpdateTextArea</value>
+                </Action>
+                <Input>
+                    <value>kg.</value>
+                </Input>
+            </properties>
+        </message>
+        <message>
+            <verb>NotePropertySet</verb>
+            <properties>
+                <MessageType>InterfaceAction</MessageType>
+                <transaction_id>e8110dc3-6956-9cb6-ef18-8a3acab1ca93</transaction_id>
+                <Selection>
+                    <value>weight_in_kg_expansion_prompt4</value>
+                </Selection>
+                <Action>
+                    <value>UpdateTextArea</value>
+                </Action>
+                <Input>
+                    <value>So we need to</value>
+                </Input>
+            </properties>
+        </message>
+        <message>
+            <verb>NotePropertySet</verb>
+            <properties>
+                <MessageType>InterfaceAction</MessageType>
+                <transaction_id>abf2e9c1-8811-a12f-fb1b-07f35e3b5417</transaction_id>
+                <Selection>
+                    <value>weight_in_kg_expansion_prompt1</value>
+                </Selection>
+                <Action>
+                    <value>UpdateTextArea</value>
+                </Action>
+                <Input>
+                    <value>The %(pet)% weighs %(full_pounds)% lbs and 1 lb =</value>
+                </Input>
+            </properties>
+        </message>
+        <message>
             <verb>SendNoteProperty</verb>
             <properties>
                 <MessageType>StartStateEnd</MessageType>
@@ -604,552 +604,544 @@
         <text>Correct weight in pounds</text>
         <uniqueID>2</uniqueID>
         <dimension>
-            <x>1705</x>
-            <y>209</y>
+            <x>1780</x>
+            <y>126</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct Weight in kg</text>
         <uniqueID>5</uniqueID>
         <dimension>
-            <x>1555</x>
-            <y>290</y>
+            <x>1715</x>
+            <y>1336</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct Dose in mg</text>
         <uniqueID>6</uniqueID>
         <dimension>
-            <x>1637</x>
-            <y>1410</y>
+            <x>1642</x>
+            <y>2456</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct dose in mL</text>
         <uniqueID>8</uniqueID>
         <dimension>
-            <x>1466</x>
-            <y>1490</y>
+            <x>1826</x>
+            <y>3576</y>
         </dimension>
     </node>
     <node locked="false" doneState="true">
         <text>Done</text>
         <uniqueID>9</uniqueID>
         <dimension>
-            <x>1498</x>
-            <y>1570</y>
+            <x>1858</x>
+            <y>3656</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Incorrect weight in kg: divided</text>
         <uniqueID>11</uniqueID>
         <dimension>
-            <x>1693</x>
-            <y>290</y>
+            <x>1861</x>
+            <y>209</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Incorrect dose in mg: divided</text>
         <uniqueID>12</uniqueID>
         <dimension>
-            <x>1458</x>
-            <y>370</y>
+            <x>1773</x>
+            <y>1416</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Incorrect dose in mL: multiplied</text>
         <uniqueID>13</uniqueID>
         <dimension>
-            <x>1780</x>
-            <y>1490</y>
+            <x>1527</x>
+            <y>2536</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Second incorrect weight in pounds</text>
         <uniqueID>17</uniqueID>
         <dimension>
-            <x>2218</x>
-            <y>208</y>
+            <x>2147</x>
+            <y>209</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Reveal weight_in_pounds_expansion</text>
         <uniqueID>18</uniqueID>
         <dimension>
-            <x>2223</x>
-            <y>290</y>
+            <x>2140</x>
+            <y>291</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Hide row 2</text>
         <uniqueID>19</uniqueID>
         <dimension>
-            <x>2287</x>
-            <y>370</y>
+            <x>2204</x>
+            <y>373</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Start row 1</text>
         <uniqueID>20</uniqueID>
         <dimension>
-            <x>2285</x>
-            <y>450</y>
+            <x>2202</x>
+            <y>455</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct pounds</text>
         <uniqueID>25</uniqueID>
         <dimension>
-            <x>2275</x>
-            <y>530</y>
+            <x>2192</x>
+            <y>536</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct ounces</text>
         <uniqueID>26</uniqueID>
         <dimension>
-            <x>2276</x>
-            <y>610</y>
+            <x>2193</x>
+            <y>616</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Start row 2</text>
         <uniqueID>30</uniqueID>
         <dimension>
-            <x>2285</x>
-            <y>690</y>
+            <x>2202</x>
+            <y>696</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Select Divide</text>
         <uniqueID>31</uniqueID>
         <dimension>
-            <x>2176</x>
-            <y>770</y>
+            <x>2306</x>
+            <y>776</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correctly Divide by 16</text>
         <uniqueID>32</uniqueID>
         <dimension>
-            <x>2085</x>
-            <y>850</y>
+            <x>2352</x>
+            <y>856</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Wrongly divided by 1/16</text>
         <uniqueID>33</uniqueID>
         <dimension>
-            <x>2217</x>
-            <y>850</y>
+            <x>2210</x>
+            <y>856</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Select Multiply</text>
         <uniqueID>36</uniqueID>
         <dimension>
-            <x>2385</x>
-            <y>770</y>
+            <x>2089</x>
+            <y>776</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correctly multiply by 1/16</text>
         <uniqueID>37</uniqueID>
         <dimension>
-            <x>2358</x>
-            <y>850</y>
+            <x>2062</x>
+            <y>856</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Display row 3</text>
         <uniqueID>38</uniqueID>
         <dimension>
-            <x>2106</x>
-            <y>930</y>
+            <x>2091</x>
+            <y>936</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>10oz = .625lbs</text>
         <uniqueID>40</uniqueID>
         <dimension>
-            <x>2102</x>
-            <y>1090</y>
+            <x>2087</x>
+            <y>1096</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>(Expanded) Correct weight in pounds</text>
         <uniqueID>41</uniqueID>
         <dimension>
-            <x>2049</x>
-            <y>1170</y>
+            <x>2034</x>
+            <y>1176</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Revealed complete button</text>
         <uniqueID>42</uniqueID>
         <dimension>
-            <x>2075</x>
-            <y>1250</y>
+            <x>2060</x>
+            <y>1256</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Hide complete button</text>
         <uniqueID>43</uniqueID>
         <dimension>
-            <x>2087</x>
-            <y>1010</y>
+            <x>2072</x>
+            <y>1016</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Completed weight in pounds expansion</text>
         <uniqueID>44</uniqueID>
         <dimension>
-            <x>2045</x>
-            <y>1330</y>
+            <x>2030</x>
+            <y>1336</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Hide dialog</text>
         <uniqueID>45</uniqueID>
         <dimension>
-            <x>2112</x>
-            <y>1410</y>
+            <x>2097</x>
+            <y>1416</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>First incorrect weight pounds</text>
         <uniqueID>54</uniqueID>
         <dimension>
-            <x>1959</x>
-            <y>126</y>
+            <x>2160</x>
+            <y>127</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>First incorrect weight in kg</text>
         <uniqueID>56</uniqueID>
         <dimension>
-            <x>1863</x>
-            <y>290</y>
+            <x>1693</x>
+            <y>208</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Reveal kg expansion</text>
         <uniqueID>63</uniqueID>
         <dimension>
-            <x>1877</x>
-            <y>370</y>
+            <x>1707</x>
+            <y>290</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>hide kg expansion row2</text>
         <uniqueID>64</uniqueID>
         <dimension>
-            <x>1870</x>
-            <y>450</y>
+            <x>1699</x>
+            <y>372</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>hide kg expansion row3</text>
         <uniqueID>65</uniqueID>
         <dimension>
-            <x>1870</x>
-            <y>530</y>
-        </dimension>
-    </node>
-    <node locked="false" doneState="false">
-        <text>kg expansion correct weight in pounds</text>
-        <uniqueID>66</uniqueID>
-        <dimension>
-            <x>1834</x>
-            <y>610</y>
+            <x>1699</x>
+            <y>454</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct kg/lb conversion rate</text>
         <uniqueID>67</uniqueID>
         <dimension>
-            <x>1856</x>
-            <y>690</y>
+            <x>1694</x>
+            <y>616</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>kg expansion start row2</text>
         <uniqueID>68</uniqueID>
         <dimension>
-            <x>1868</x>
-            <y>770</y>
+            <x>1706</x>
+            <y>696</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correctly chose multiply</text>
         <uniqueID>69</uniqueID>
         <dimension>
-            <x>1869</x>
-            <y>850</y>
+            <x>1707</x>
+            <y>776</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>kg expansion reveal row3</text>
         <uniqueID>70</uniqueID>
         <dimension>
-            <x>1865</x>
-            <y>930</y>
+            <x>1703</x>
+            <y>856</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct weight in kg (expanded)</text>
         <uniqueID>71</uniqueID>
         <dimension>
-            <x>1849</x>
-            <y>1090</y>
+            <x>1687</x>
+            <y>1016</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>hide kg expansion complete button</text>
         <uniqueID>72</uniqueID>
         <dimension>
-            <x>1843</x>
-            <y>1010</y>
+            <x>1681</x>
+            <y>936</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Revealed kg expansion complete button </text>
         <uniqueID>73</uniqueID>
         <dimension>
-            <x>1829</x>
-            <y>1170</y>
+            <x>1667</x>
+            <y>1096</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Completed kg expansion</text>
         <uniqueID>79</uniqueID>
         <dimension>
-            <x>1868</x>
-            <y>1250</y>
+            <x>1706</x>
+            <y>1176</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Hid kg expansion</text>
         <uniqueID>80</uniqueID>
         <dimension>
-            <x>1886</x>
-            <y>1330</y>
+            <x>1724</x>
+            <y>1256</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>First incorrect dose in mg</text>
         <uniqueID>82</uniqueID>
         <dimension>
-            <x>1622</x>
-            <y>370</y>
+            <x>1627</x>
+            <y>1416</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Reveal dose in mg expansion</text>
         <uniqueID>83</uniqueID>
         <dimension>
-            <x>1613</x>
-            <y>450</y>
+            <x>1618</x>
+            <y>1496</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>hide dose in mg row2</text>
         <uniqueID>84</uniqueID>
         <dimension>
-            <x>1632</x>
-            <y>530</y>
+            <x>1637</x>
+            <y>1576</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Hide dose in mg row3</text>
         <uniqueID>85</uniqueID>
         <dimension>
-            <x>1631</x>
-            <y>610</y>
+            <x>1636</x>
+            <y>1656</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct dose in mg/kg</text>
         <uniqueID>86</uniqueID>
         <dimension>
-            <x>1630</x>
-            <y>690</y>
+            <x>1635</x>
+            <y>1736</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Reveal dose in mg row2</text>
         <uniqueID>87</uniqueID>
         <dimension>
-            <x>1625</x>
-            <y>770</y>
+            <x>1630</x>
+            <y>1816</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correctly selected multiply</text>
         <uniqueID>88</uniqueID>
         <dimension>
-            <x>1619</x>
-            <y>850</y>
+            <x>1624</x>
+            <y>1896</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Revealed dose in mg row3</text>
         <uniqueID>89</uniqueID>
         <dimension>
-            <x>1619</x>
-            <y>930</y>
+            <x>1624</x>
+            <y>1976</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Hid dose in mg complete button</text>
         <uniqueID>90</uniqueID>
         <dimension>
-            <x>1607</x>
-            <y>1010</y>
+            <x>1612</x>
+            <y>2056</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct dose in mg expansion</text>
         <uniqueID>91</uniqueID>
         <dimension>
-            <x>1611</x>
-            <y>1090</y>
+            <x>1616</x>
+            <y>2136</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Reveal dose in mg complete button</text>
         <uniqueID>92</uniqueID>
         <dimension>
-            <x>1598</x>
-            <y>1170</y>
+            <x>1603</x>
+            <y>2216</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Finished dose in mg expansion</text>
         <uniqueID>93</uniqueID>
         <dimension>
-            <x>1610</x>
-            <y>1250</y>
+            <x>1615</x>
+            <y>2296</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Filled original dose in mg</text>
         <uniqueID>94</uniqueID>
         <dimension>
-            <x>1625</x>
-            <y>1330</y>
+            <x>1630</x>
+            <y>2376</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Incorrect dose in mL (random)</text>
         <uniqueID>97</uniqueID>
         <dimension>
-            <x>1610</x>
-            <y>1490</y>
+            <x>1701</x>
+            <y>2536</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Reveal dose in mL expansion</text>
         <uniqueID>98</uniqueID>
         <dimension>
-            <x>1613</x>
-            <y>1570</y>
+            <x>1704</x>
+            <y>2616</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Hid dose in mL row2</text>
         <uniqueID>99</uniqueID>
         <dimension>
-            <x>1635</x>
-            <y>1650</y>
+            <x>1726</x>
+            <y>2696</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Hid dose in mL row3</text>
         <uniqueID>100</uniqueID>
         <dimension>
-            <x>1635</x>
-            <y>1730</y>
+            <x>1726</x>
+            <y>2776</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct density</text>
         <uniqueID>101</uniqueID>
         <dimension>
-            <x>1645</x>
-            <y>1810</y>
+            <x>1736</x>
+            <y>2856</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Reveal dose in mL row2</text>
         <uniqueID>102</uniqueID>
         <dimension>
-            <x>1626</x>
-            <y>1890</y>
+            <x>1717</x>
+            <y>2936</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correctly divide dose by density</text>
         <uniqueID>103</uniqueID>
         <dimension>
-            <x>1605</x>
-            <y>1970</y>
+            <x>1696</x>
+            <y>3016</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Revealed mL row3</text>
         <uniqueID>104</uniqueID>
         <dimension>
-            <x>1638</x>
-            <y>2050</y>
+            <x>1729</x>
+            <y>3096</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>mL hide complete button</text>
         <uniqueID>105</uniqueID>
         <dimension>
-            <x>1624</x>
-            <y>2130</y>
+            <x>1715</x>
+            <y>3176</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Correct dose in mL expansion</text>
         <uniqueID>106</uniqueID>
         <dimension>
-            <x>1516</x>
-            <y>2210</y>
+            <x>1800</x>
+            <y>3256</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Incorrectly divided mL dose in expansion</text>
         <uniqueID>109</uniqueID>
         <dimension>
-            <x>1682</x>
-            <y>2210</y>
+            <x>1580</x>
+            <y>3256</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Revealed mL expansion complete button</text>
         <uniqueID>110</uniqueID>
         <dimension>
-            <x>1489</x>
-            <y>2290</y>
+            <x>1773</x>
+            <y>3336</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Hit Complete in mL expansion</text>
         <uniqueID>111</uniqueID>
         <dimension>
-            <x>1516</x>
-            <y>2370</y>
+            <x>1800</x>
+            <y>3416</y>
         </dimension>
     </node>
     <node locked="false" doneState="false">
         <text>Filled in  original dose in mL</text>
         <uniqueID>112</uniqueID>
         <dimension>
-            <x>1522</x>
-            <y>2450</y>
+            <x>1806</x>
+            <y>3496</y>
         </dimension>
     </node>
     <edge>
@@ -3224,128 +3216,6 @@ Please enter %(ml_dose)% into the highlighted field</hintMessage>
         </rule>
         <sourceID>64</sourceID>
         <destID>65</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>232</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>4032ebb8-c466-df41-9305-c2ea5fd46408</transaction_id>
-                    <Selection>
-                        <value>weight_in_kg_expansion_input1</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateTextField</value>
-                    </Action>
-                    <Input>
-                        <value>1.625</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>In the last step, we found that the %(pet)% weighs %(full_pounds)% pounds (lbs)</hintMessage>
-            <hintMessage>Please enter %(full_pounds)% in the highlighted field.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">weight_in_kg_expansion_input1</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">%(full_pounds)%</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>Information_Retrieval Dimensional_Analysis</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>65</sourceID>
-        <destID>66</destID>
-        <traversalCount>0</traversalCount>
-    </edge>
-    <edge>
-        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
-            <studentHintRequest></studentHintRequest>
-            <stepSuccessfulCompletion></stepSuccessfulCompletion>
-            <stepStudentError></stepStudentError>
-            <uniqueID>234</uniqueID>
-            <message>
-                <verb>NotePropertySet</verb>
-                <properties>
-                    <MessageType>InterfaceAction</MessageType>
-                    <transaction_id>6db3de71-5542-f155-72ab-f6843e5fb3da</transaction_id>
-                    <Selection>
-                        <value>weight_in_kg_expansion_input2</value>
-                    </Selection>
-                    <Action>
-                        <value>UpdateTextField</value>
-                    </Action>
-                    <Input>
-                        <value>.454</value>
-                    </Input>
-                </properties>
-            </message>
-            <buggyMessage>No, this is not correct.</buggyMessage>
-            <successMessage></successMessage>
-            <hintMessage>Can you find the conversion rate from pounds (lbs) to kilograms (kg) in the prompt?</hintMessage>
-            <hintMessage>Please enter '.454' in the highlighted field.</hintMessage>
-            <callbackFn></callbackFn>
-            <actionType>Correct Action</actionType>
-            <oldActionType>Correct Action</oldActionType>
-            <checkedStatus>Never Checked</checkedStatus>
-            <matchers Concatenation="true">
-                <Selection>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">weight_in_kg_expansion_input2</matcherParameter>
-                    </matcher>
-                </Selection>
-                <Action>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">UpdateTextField</matcherParameter>
-                    </matcher>
-                </Action>
-                <Input>
-                    <matcher>
-                        <matcherType>ExactMatcher</matcherType>
-                        <matcherParameter name="single">.454</matcherParameter>
-                    </matcher>
-                </Input>
-                <Actor linkTriggered="false">Student</Actor>
-            </matchers>
-        </actionLabel>
-        <preCheckedStatus>No-Applicable</preCheckedStatus>
-        <rule>
-            <text>Information_Retrieval Dimensional_Analysis</text>
-            <indicator>-1</indicator>
-        </rule>
-        <sourceID>66</sourceID>
-        <destID>67</destID>
         <traversalCount>0</traversalCount>
     </edge>
     <edge>
@@ -5705,6 +5575,67 @@ Please enter %(ml_dose)% into the highlighted field</hintMessage>
         <destID>63</destID>
         <traversalCount>0</traversalCount>
     </edge>
+    <edge>
+        <actionLabel preferPathMark="true" minTraversals="1" maxTraversals="1">
+            <studentHintRequest></studentHintRequest>
+            <stepSuccessfulCompletion></stepSuccessfulCompletion>
+            <stepStudentError></stepStudentError>
+            <uniqueID>234</uniqueID>
+            <message>
+                <verb>NotePropertySet</verb>
+                <properties>
+                    <MessageType>InterfaceAction</MessageType>
+                    <transaction_id>6db3de71-5542-f155-72ab-f6843e5fb3da</transaction_id>
+                    <Selection>
+                        <value>weight_in_kg_expansion_input2</value>
+                    </Selection>
+                    <Action>
+                        <value>UpdateTextField</value>
+                    </Action>
+                    <Input>
+                        <value>.454</value>
+                    </Input>
+                </properties>
+            </message>
+            <buggyMessage>No, this is not correct.</buggyMessage>
+            <successMessage></successMessage>
+            <hintMessage>Can you find the conversion rate from pounds (lbs) to kilograms (kg) in the prompt?</hintMessage>
+            <hintMessage>Please enter '.454' in the highlighted field.</hintMessage>
+            <callbackFn></callbackFn>
+            <actionType>Correct Action</actionType>
+            <oldActionType>Correct Action</oldActionType>
+            <checkedStatus>Never Checked</checkedStatus>
+            <matchers Concatenation="true">
+                <Selection>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">weight_in_kg_expansion_input2</matcherParameter>
+                    </matcher>
+                </Selection>
+                <Action>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">UpdateTextField</matcherParameter>
+                    </matcher>
+                </Action>
+                <Input>
+                    <matcher>
+                        <matcherType>ExactMatcher</matcherType>
+                        <matcherParameter name="single">.454</matcherParameter>
+                    </matcher>
+                </Input>
+                <Actor linkTriggered="false">Student</Actor>
+            </matchers>
+        </actionLabel>
+        <preCheckedStatus>No-Applicable</preCheckedStatus>
+        <rule>
+            <text>Information_Retrieval Dimensional_Analysis</text>
+            <indicator>-1</indicator>
+        </rule>
+        <sourceID>65</sourceID>
+        <destID>67</destID>
+        <traversalCount>0</traversalCount>
+    </edge>
     <productionRule>
         <ruleName>Information_Retrieval</ruleName>
         <productionSet>Dimensional_Analysis</productionSet>
@@ -5741,9 +5672,6 @@ Please enter %(ml_dose)% into the highlighted field</hintMessage>
         <group name="weight_expansion_row1" ordered="false" reenterable="true">
             <link id="81"/>
             <link id="79"/></group>
-        <group name="kg_expansion_row1" ordered="false" reenterable="true">
-            <link id="234"/>
-            <link id="232"/></group>
     </EdgesGroups>
 </stateGraph>
 

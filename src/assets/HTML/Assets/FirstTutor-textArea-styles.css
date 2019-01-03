@@ -2,27 +2,23 @@
 
         .body-initial {background-color: rgb(255, 255, 255);
         }
-        .background-initial {background-color: rgb(255, 255, 255); top: 5px; left: 154px; width: 550px; height: 550px;
-        }
-        .silex-id-1535654390495-0 {top: 380px; left: 120px; height: 140px; width: 306px;
-        }
         .silex-id-1536082822401-0 {top: 40px; left: 40px; height: 133px; width: 500px;
         }
-        .silex-id-1536084915451-2 {top: 180px; left: 110px; height: 20px; width: 215px;
+/*        .silex-id-1536084915451-2 {top: 180px; left: 110px; height: 20px; width: 215px;
         }
-        .silex-id-1536084943830-3 {top: 180px; left: 330px; height: 1.4em; width: 100px;
+*/        .silex-id-1536084943830-3 {height: 1.4em; width: 100px;
         }
-        .silex-id-1536085053943-5 {top: 220px; left: 110px; height: 20px; width: 180px;
+/*        .silex-id-1536085053943-5 {top: 220px; left: 110px; height: 20px; width: 180px;
         }
-        .silex-id-1536085111627-6 {top: 220px; left: 330px; height: 1.4em; width: 100px;
+*/        .silex-id-1536085111627-6 {height: 1.4em; width: 100px;
         }
-        .silex-id-1536085227766-8 {top: 260px; left: 110px; height: 20px; width: 180px;
+/*        .silex-id-1536085227766-8 {top: 260px; left: 110px; height: 20px; width: 180px;
         }
-        .silex-id-1536085377743-9 {top: 260px; left: 330px; height: 1.4em; width: 100px;
+*/        .silex-id-1536085377743-9 {height: 1.4em; width: 100px;
         }
-        .silex-id-1536085428524-10 {top: 300px; left: 110px; height: 20px; width: 180px;
+/*        .silex-id-1536085428524-10 {top: 300px; left: 110px; height: 20px; width: 180px;
         }
-        .silex-id-1536085476313-11 {top: 300px; left: 330px; height: 1.4em; width: 100px;
+*/        .silex-id-1536085476313-11 {height: 1.4em; width: 100px;
         }
 
 
@@ -31,33 +27,78 @@ body {
         background-color: #352B66 !important;
 }
 .background-initial {
+        position: absolute !important;
+        display: block;
         border-radius: 5% !important;
         width: 70%;
+        height: 83%;
+        margin-top: 2%;
+        margin-left: 15%;
 }
 
+#stepsContainer {
+        position: absolute;
+        height: 40%;
+        margin-top: 17%;
+        width: 100%;
+        display: block;
+}
 .CTATTextInput {
         border-radius: 2% !important;
         /*background-color: #FCFCFC !important;*/
 }
 
 #problem-statement {
-        left: 23%;
-        top: 14px;
+        height: 44%;
+        width: 65%;
+        margin-left: 24%;
+        margin-top: -2%;
 } 
 
 #weight-in-pounds-prompt, #weight-in-kg-prompt, #drug-mass-in-mg-prompt, #drug-volume-prompt {
-        left: 33%;
+        left: 28%;
+        height: 1.4em;
+        width: 15%;
 }
 #weight-in-pounds-input, #weight-in-kg-input, #drug-mass-in-mg-input, #drug-volume-input {
-        left: 58%;
+        left: 55%;
 }
 
 #hint-box {
-        left: 15%;
+        bottom: 3%;
+        width: 33%;
+        margin-left: 11%;
 }
 #skill-window {
         position: absolute;
-        top: 69%;
-        left: 55%;
-        width: 300px;
+        bottom: 3%;
+        margin-left: 55%;
+        width: 33%;
+}
+
+.invisible_input {
+        position: absolute;
+        display: block;
+        /*border: 2px solid black;*/
+        margin-left: -1000%;
+}
+
+
+.stepRow {
+        display: block;
+        margin-top: 3%;
+}
+.stepPrompt {
+        display: inline-block;
+}
+
+.stepInput {
+        display: inline-block;
+        position: relative !important;
+        left: 60%;
+
+}
+
+.stepRow .CTATTextArea textarea {
+        width: 100%;
 }
