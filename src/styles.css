@@ -64,3 +64,10 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+/*app-navbar {
+  position: fixed;
+  width: 30%;
+  z-index: 3;
+  background-color: #2E2453;
+}*/
