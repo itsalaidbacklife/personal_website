@@ -1,0 +1,8 @@
+import("skillDefinitions.nools");
+import("productionrules.nools");
+
+global num1 = 5;
+global den1 = 8;
+
+global num2 = 5;
+global den2 = 4;
