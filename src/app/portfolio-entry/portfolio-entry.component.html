@@ -2,7 +2,7 @@
 	<h3>{{title}}</h3>
 	<div id="imageWrap">
 		<img src="./assets/{{title | lowercase}}.PNG">
-		<a *ngIf="detailsLink" routerLink="/portfolioDetails"></a>
+		<a *ngIf="detailsLink" routerLink="/{{detailsLink}}"></a>
 	</div>
 	<p>{{txt}}</p>
 	<p>{{txt2}}</p>
