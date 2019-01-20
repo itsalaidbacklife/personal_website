@@ -35,7 +35,7 @@ export const routerTransition = trigger('routerTransition', [
 
       query(':enter #contactContainer', [
       	style({ transform: 'translateX(100%)' }),
-      	animate('.5s ease-out', style({ transform: 'translate(-5px, -20px)', position: 'relative'}))
+      	animate('.5s ease-out', style({ transform: 'translate(0px, -30px)', position: 'relative'}))
       	], {optional: true}),
 
       query(':leave', [

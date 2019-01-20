@@ -9,7 +9,7 @@ const routes: Routes = [
 	{ path: 'about', component: AboutComponent, data: {state: 'about'} },
 	{ path: 'portfolio', component: PortfolioComponent, data: {state: 'portfolio'} },
 	{ path: 'contact', component: ContactComponent, data: {state: 'contact'} },
-	{ path: 'portfolioDetails', component: DetailsDimensionalAnalysisComponent, data: {state: 'portfolioDetails'}}
+	{ path: 'doseTutor', component: DetailsDimensionalAnalysisComponent, data: {state: 'portfolioDetails'}}
 ]
 @NgModule({
 	imports: [ RouterModule.forRoot(routes, {useHash: true}) ],
