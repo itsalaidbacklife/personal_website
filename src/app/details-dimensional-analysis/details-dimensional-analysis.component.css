@@ -55,10 +55,10 @@ img {
 	margin-bottom: 2%;
 }
 
-a:hover {
+.imgWrapper a:hover {
   /*color: #039be5;*/
   /*background-color: #CFD8DC;*/
-  opacity: .4;
+  opacity: 0;
 }
 
 #demoLinkText {

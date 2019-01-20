@@ -23,6 +23,7 @@ img	{
 	top: 10%;
 }
 
-a:hover {  
-  opacity: .4;
+#imageWrap a:hover {  
+  opacity: .0;
 }
+
