@@ -11,7 +11,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillbarComponent } from './skillbar/skillbar.component';
 import { PortfolioEntryComponent } from './portfolio-entry/portfolio-entry.component';
-import { PortfolioDetailsComponent } from './portfolio-details/portfolio-details.component';
+import { DetailsDimensionalAnalysisComponent } from './details-dimensional-analysis/details-dimensional-analysis.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { PortfolioDetailsComponent } from './portfolio-details/portfolio-details
     ContactComponent,
     SkillbarComponent,
     PortfolioEntryComponent,
-    PortfolioDetailsComponent
+    DetailsDimensionalAnalysisComponent
   ],
   imports: [
     BrowserModule,

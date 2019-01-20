@@ -42,6 +42,11 @@ export const routerTransition = trigger('routerTransition', [
         style({ transform: 'translateX(0%)' }),
         animate('0.5s ease-in-out', style({ transform: 'translateX(-100%)', position: 'fixed' }))
       ], { optional: true }),
+
+      query(':enter #dimensionalAnalysisContainer', [
+        style({ transform: 'translateX(100%)' }),
+        animate('.5s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+        ], {optional: true}),
       // query(':enter .entryWrapper', stagger(400, [
       //   style({ transform: 'translateY(100%)'}),
       //   animate('1s ease-in-out',
