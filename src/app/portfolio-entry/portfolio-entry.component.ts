@@ -12,6 +12,7 @@ export class PortfolioEntryComponent implements OnInit {
 	@Input() txt2: string;
 	@Input() linkText: string;
 	@Input() link: string;
+	@Input() detailsLink: string;
 	constructor() { }
 
 	ngOnInit() {
