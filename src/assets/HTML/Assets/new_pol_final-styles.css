@@ -142,3 +142,14 @@
     position: absolute;
 
 }
+
+#restart {
+    margin-left: 2%;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #607D8B;
+}
+#restart:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}

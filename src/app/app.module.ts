@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillbarComponent } from './skillbar/skillbar.component';
 import { PortfolioEntryComponent } from './portfolio-entry/portfolio-entry.component';
 import { DetailsDimensionalAnalysisComponent } from './details-dimensional-analysis/details-dimensional-analysis.component';
+import { FracTutorComponent } from './frac-tutor/frac-tutor.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DetailsDimensionalAnalysisComponent } from './details-dimensional-analy
     ContactComponent,
     SkillbarComponent,
     PortfolioEntryComponent,
-    DetailsDimensionalAnalysisComponent
+    DetailsDimensionalAnalysisComponent,
+    FracTutorComponent
   ],
   imports: [
     BrowserModule,
