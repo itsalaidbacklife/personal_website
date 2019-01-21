@@ -18,7 +18,12 @@ a {
 
 /*Small Screens only*/
 @media screen and (max-width: 600px) {
+	#contactContainer {
+		margin-left: 0px;
+	}
 	p {
-		font-size: 11pt;
+		font-size: 1.25em;
+		width: 80%;
+		left: 10%;
 	}
 }

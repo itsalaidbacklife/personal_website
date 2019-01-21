@@ -13,6 +13,10 @@ h2 {
 	font-size: 16pt;
 }
 
+div p a {
+	margin:	0px;
+}
+
 /*Large Screens only*/
 @media screen and (min-width: 1000px) {
 	#spiel {
@@ -41,12 +45,15 @@ h2 {
 
 /*Small screens only*/
 @media screen and (max-width: 1000px) {
+	#aboutContainer {
+		left: 0px;
+	}
 	#spiel {
 		display: block;
 		position: relative;
-		width: 50%;
-		margin-left: 25%;
-		margin-right: 25%;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
 		margin-top: 5%;
 		text-align: center;
 		font-size: 15pt;
@@ -59,11 +66,11 @@ h2 {
 	#skills {
 		display: block;
 		position: relative;
-		width: 50%;
+		width: 70%;
 		font-weight: bold;
 		/*border: 2px solid white;*/
-		margin-left: 25%;
-		margin-right: 25%;
+		margin-left: 15%;
+		margin-right: 15%;
 		margin-top: 10%;
 		margin-bottom: 10%;
 	}

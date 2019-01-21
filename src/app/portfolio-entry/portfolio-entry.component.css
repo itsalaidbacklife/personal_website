@@ -27,3 +27,16 @@ img	{
   opacity: .0;
 }
 
+/*@media screen and (max-width: 700) {
+	.entryWrapper {
+		width: 70% !important;
+		left: 15% !important;
+	}
+}*/
+/*Small Screens only*/
+@media screen and (max-width: 600px) {
+	.entryWrapper {
+		width: 70% !important;
+		left: 15% !important;
+	}
+}

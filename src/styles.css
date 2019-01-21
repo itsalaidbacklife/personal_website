@@ -72,3 +72,10 @@ body {
   z-index: 3;
   background-color: #2E2453;
 }*/
+
+/*Small Screens only*/
+@media screen and (max-width: 600px) {
+  #header {
+    font-size: 1.5em;
+  }
+}
