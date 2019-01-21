@@ -2,7 +2,7 @@
 	<div class="imgWrapper">
 		<h3>DoseTutor</h3>
 		<img src="./assets/cogntive tutor - dosetutor.PNG">
-		<a href="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd" target="_blank"></a>
+		<a href="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd" target="_blank" [ngStyle]="{'visibility': imageLinkVisibility}"></a>
 	</div>
 
 	<div class="problemSolutionWrapper" id="problemAndSolution">
@@ -13,7 +13,7 @@
 
 	<div class="imgWrapper" id="kg-expansion-wrapper">
 		<img src="./assets/dimentional-analysis-kg-expansion.PNG">
-		<a href="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd" target="_blank"></a>
+		<a href="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd" target="_blank" [ngStyle]="{'visibility': imageLinkVisibility}"></a>
 	</div>
 
 
@@ -22,7 +22,8 @@
 
 		<p class="problemStatement">If students make mistakes on any of the original 4 steps, they are brought to a separate diaglog that splits the current step into 3-4 substeps. This allows advanced students to answer the question in a few simple steps, while modeling for struggling students how the sequence of information retrieval and calculation required to solve the problem can be broken into reasonably sized chunks.</p>
 	</div>
-	<p id="demoLinkText">Try a<a href="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd" target="_blank">demo.</a>Refresh the page to start over. Try making different mistakes to see different paths through the problem</p>
+	<p id="demoLinkText" [ngStyle]="{'visibility': imageLinkVisibility}">Try a<a href="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd" target="_blank">demo.</a>Refresh the page to start over. Try making different mistakes to see different paths through the problem</p>
+	<p id="noDemoText" [ngStyle]="{'visibility': smallScreenTextVisibility}">You must use a larger screen to try a demo; sorry!</p>
 </div>
 <!-- <div id="details">
 	<p>If students make mistakes on any of original 4 steps, they are brought to a separate diaglog that splits the current step into 3-4 substeps. This models for struggling students how the long chain of calculations required to answer the question can be broken into reasonably sized chunks, while allowing advanced students to answer the question in a few simple steps.</p>

@@ -85,4 +85,10 @@ img {
 	.problemStatement {
 		margin-left: 0% !important;
 	}
+	#noDemoText {
+		text-align: center;
+		position: relative;
+		margin-top: -10%;
+
+	}
 }

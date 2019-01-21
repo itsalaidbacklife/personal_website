@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsDimensionalAnalysisComponent implements OnInit {
 
-  constructor() { }
+	get imageLinkVisibility() {
+		if (window.innerWidth > 700) {
+			return 'visible';
+		} else {
+			return 'hidden';
+		}
+	}
 
-  ngOnInit() {
-  }
+	get smallScreenTextVisibility() {
+		if (window.innerWidth < 700) {
+			return 'visible';
+		} else {
+			return 'hidden';
+		}
+	}
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }
