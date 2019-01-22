@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DetailsDimensionalAnalysisComponent } from './details-dimensional-analysis/details-dimensional-analysis.component';
 import { FracTutorComponent } from './frac-tutor/frac-tutor.component';
 import { CuttleBotComponent } from './cuttle-bot/cuttle-bot.component';
+import { NoneducationalPortfolioComponent } from './noneducational-portfolio/noneducational-portfolio.component';
 const routes: Routes = [
 	{ path: '', component: AboutComponent },
 	{ path: 'about', component: AboutComponent, data: {state: 'about'} },
@@ -14,6 +15,7 @@ const routes: Routes = [
 	{ path: 'doseTutor', component: DetailsDimensionalAnalysisComponent, data: {state: 'portfolioDetails'}},
 	{ path: 'fracTutor', component: FracTutorComponent, data: {state: 'fracTutorDetails'}},
 	{ path: 'cuttleBot', component: CuttleBotComponent, data: {state: 'cuttleBotDetails'}},
+	{ path: 'otherWork', component: NoneducationalPortfolioComponent, data: {state: 'otherWork'}},
 ]
 @NgModule({
 	imports: [ RouterModule.forRoot(routes, {useHash: true}) ],

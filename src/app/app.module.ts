@@ -14,6 +14,7 @@ import { PortfolioEntryComponent } from './portfolio-entry/portfolio-entry.compo
 import { DetailsDimensionalAnalysisComponent } from './details-dimensional-analysis/details-dimensional-analysis.component';
 import { FracTutorComponent } from './frac-tutor/frac-tutor.component';
 import { CuttleBotComponent } from './cuttle-bot/cuttle-bot.component';
+import { NoneducationalPortfolioComponent } from './noneducational-portfolio/noneducational-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CuttleBotComponent } from './cuttle-bot/cuttle-bot.component';
     PortfolioEntryComponent,
     DetailsDimensionalAnalysisComponent,
     FracTutorComponent,
-    CuttleBotComponent
+    CuttleBotComponent,
+    NoneducationalPortfolioComponent
   ],
   imports: [
     BrowserModule,
