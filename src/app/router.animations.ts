@@ -56,7 +56,12 @@ if (window.innerWidth <= 600) {
 
         query(':enter #dimensionalAnalysisContainer', [
           style({ transform: 'translateY(100%)' }),
-          animate('.5s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+          animate('1s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+          ], {optional: true}),
+
+        query(':enter #fracTutorContainer', [
+          style({ transform: 'translateY(100%)' }),
+          animate('1.25s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
           ], {optional: true}),
 
         // query(':enter .entryWrapper', stagger(400, [
