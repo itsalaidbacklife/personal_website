@@ -13,6 +13,7 @@ import { SkillbarComponent } from './skillbar/skillbar.component';
 import { PortfolioEntryComponent } from './portfolio-entry/portfolio-entry.component';
 import { DetailsDimensionalAnalysisComponent } from './details-dimensional-analysis/details-dimensional-analysis.component';
 import { FracTutorComponent } from './frac-tutor/frac-tutor.component';
+import { CuttleBotComponent } from './cuttle-bot/cuttle-bot.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FracTutorComponent } from './frac-tutor/frac-tutor.component';
     SkillbarComponent,
     PortfolioEntryComponent,
     DetailsDimensionalAnalysisComponent,
-    FracTutorComponent
+    FracTutorComponent,
+    CuttleBotComponent
   ],
   imports: [
     BrowserModule,

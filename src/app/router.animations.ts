@@ -64,6 +64,11 @@ if (window.innerWidth <= 600) {
           animate('1.25s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
           ], {optional: true}),
 
+        query(':enter #cuttleBotContainer', [
+          style({ transform: 'translateY(200%)' }),
+          animate('1.6s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+          ], {optional: true}),
+
         // query(':enter .entryWrapper', stagger(400, [
         //   style({ transform: 'translateY(100%)'}),
         //   animate('1s ease-in-out',
@@ -125,6 +130,10 @@ if (window.innerWidth <= 600) {
         query(':enter #fracTutorContainer', [
           style({ transform: 'translateY(150%)' }),
           animate('1.25s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+          ], {optional: true}),
+        query(':enter #cuttleBotContainer', [
+          style({ transform: 'translateY(300%)' }),
+          animate('1.5s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
           ], {optional: true}),
         // query(':enter .entryWrapper', stagger(400, [
         //   style({ transform: 'translateY(100%)'}),
