@@ -18,7 +18,7 @@ const routes: Routes = [
 	{ path: 'otherWork', component: NoneducationalPortfolioComponent, data: {state: 'otherWork'}},
 ]
 @NgModule({
-	imports: [ RouterModule.forRoot(routes, {useHash: true}) ],
+	imports: [ RouterModule.forRoot(routes, {useHash: true, scrollPositionRestoration: 'enabled'}) ],
 	exports: [ RouterModule ]
 })
 export class AppRoutingModule { }
