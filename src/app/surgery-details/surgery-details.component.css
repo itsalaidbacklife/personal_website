@@ -14,6 +14,7 @@ img {
 	display: inline-block;
 	position: relative;
 	width: 100%;
+	border-radius: 5%;
 }
 
 .imgWrapper a {
@@ -35,7 +36,7 @@ img {
 }
 #problemAndSolution {
 	/*top: -10%;*/
-	bottom: 80px;
+	bottom: 100px;
 	margin-top: 0%;
 	/*height: 34%;*/
 }
@@ -53,7 +54,12 @@ img {
 
 #details {
 	margin-bottom: 2%;
-	bottom: 25px;
+	bottom: 100px;
+}
+
+#results {
+	bottom: 50px;
+	margin-bottom: 2%;
 }
 
 .imgWrapper a:hover {
@@ -86,10 +92,11 @@ img {
 	.problemStatement {
 		margin-left: 0% !important;
 	}
-	#noDemoText {
-		text-align: center;
-		position: relative;
-		margin-top: -10%;
-
+	#details {
+		bottom: 0px !important;
 	}
+	#results {
+		bottom: 0px;
+	}
+
 }

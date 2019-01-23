@@ -6,21 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./surgery-details.component.css']
 })
 export class SurgeryDetailsComponent implements OnInit {
-	get imageLinkVisibility() {
-		if (window.innerWidth > 700) {
-			return 'visible';
-		} else {
-			return 'hidden';
-		}
-	}
 
-	get smallScreenTextVisibility() {
-		if (window.innerWidth < 700) {
-			return 'visible';
-		} else {
-			return 'hidden';
-		}
-	}
   constructor() { }
 
   ngOnInit() {

@@ -114,7 +114,7 @@ if (window.innerWidth <= 600) {
 
         query(':enter #contactContainer', [
         	style({ transform: 'translateX(100%)' }),
-        	animate('.5s ease-out', style({ transform: 'translate(0px, -30px)', position: 'relative'}))
+        	animate('.5s ease-out', style({ transform: 'translate(5px, -25px)', position: 'relative'}))
         	], {optional: true}),
 
         query(':leave', [
@@ -129,11 +129,11 @@ if (window.innerWidth <= 600) {
 
         query(':enter #fracTutorContainer', [
           style({ transform: 'translateY(150%)' }),
-          animate('1s ease-out', style({ transform: 'translate(0px, 15px)', position: 'relative'}))
+          animate('1s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
           ], {optional: true}),
         query(':enter #cuttleBotContainer', [
-          style({ transform: 'translateY(300%)' }),
-          animate('1.5s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+          style({ transform: 'translateY(200%)' }),
+          animate('1.25s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
           ], {optional: true}),
         // query(':enter .entryWrapper', stagger(400, [
         //   style({ transform: 'translateY(100%)'}),
