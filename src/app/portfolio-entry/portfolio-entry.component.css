@@ -2,9 +2,12 @@
 	position: relative;
 	display: block;
 	text-align: center;
-	width: 30%;
-	left: 35.5%;
+	width: 45%;
+	left: 27.5%;
 	margin-bottom: 5%;
+}
+h3 {
+	/*font-size: 1.5em;*/
 }
 img	{
 	width: 100%;

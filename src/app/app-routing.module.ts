@@ -7,6 +7,7 @@ import { DetailsDimensionalAnalysisComponent } from './details-dimensional-analy
 import { FracTutorComponent } from './frac-tutor/frac-tutor.component';
 import { CuttleBotComponent } from './cuttle-bot/cuttle-bot.component';
 import { NoneducationalPortfolioComponent } from './noneducational-portfolio/noneducational-portfolio.component';
+import { SurgeryDetailsComponent } from './surgery-details/surgery-details.component';
 const routes: Routes = [
 	{ path: '', component: AboutComponent },
 	{ path: 'about', component: AboutComponent, data: {state: 'about'} },
@@ -15,6 +16,7 @@ const routes: Routes = [
 	{ path: 'doseTutor', component: DetailsDimensionalAnalysisComponent, data: {state: 'portfolioDetails'}},
 	{ path: 'fracTutor', component: FracTutorComponent, data: {state: 'fracTutorDetails'}},
 	{ path: 'cuttleBot', component: CuttleBotComponent, data: {state: 'cuttleBotDetails'}},
+	{ path: 'vascular-surgery', component:SurgeryDetailsComponent, data: {state: 'vascular-surgery'}},
 	{ path: 'otherWork', component: NoneducationalPortfolioComponent, data: {state: 'otherWork'}},
 ]
 @NgModule({
