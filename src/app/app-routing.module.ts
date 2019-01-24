@@ -9,7 +9,7 @@ import { CuttleBotComponent } from './cuttle-bot/cuttle-bot.component';
 import { NoneducationalPortfolioComponent } from './noneducational-portfolio/noneducational-portfolio.component';
 import { SurgeryDetailsComponent } from './surgery-details/surgery-details.component';
 const routes: Routes = [
-	{ path: '', component: AboutComponent },
+	{ path: '', redirectTo: 'about', pathMatch: 'full' },
 	{ path: 'about', component: AboutComponent, data: {state: 'about'} },
 	{ path: 'portfolio', component: PortfolioComponent, data: {state: 'portfolio'} },
 	{ path: 'contact', component: ContactComponent, data: {state: 'contact'} },
