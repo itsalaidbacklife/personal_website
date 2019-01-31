@@ -14,3 +14,11 @@ app-portfolio-entry {
 	padding: 5px;
 	vertical-align: top;
 }
+@media screen and (max-width: 600px) {
+	app-portfolio-entry {
+		display: block;
+		width: 80%;
+		left: 10%;
+		margin-left: 0%;
+	}
+}

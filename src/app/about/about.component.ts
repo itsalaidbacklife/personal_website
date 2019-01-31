@@ -39,6 +39,9 @@ export class AboutComponent implements OnInit {
 	skillSetNames: Array<string>;
 	skillIndex: number;
 
+	get smallScreen() {
+		return window.innerWidth < 600;
+	}
 	get skillSet() {
 		return this.skillSetNames[this.skillIndex];
 	}

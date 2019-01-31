@@ -1,5 +1,8 @@
 a {
 	font-size: 1.35em;
+	display: inline-block;
+	position: relative;
+	right: 10px;
 }
 
 .entryWrapper {
@@ -34,6 +37,13 @@ img	{
 #imageWrap a:hover {  
   opacity: .0;
 }
+p {
+	text-align: left;
+}
+
+.link {
+	/*text-align: center;*/
+}
 
 /*@media screen and (max-width: 700) {
 	.entryWrapper {
@@ -43,8 +53,8 @@ img	{
 }*/
 /*Small Screens only*/
 @media screen and (max-width: 600px) {
-	.entryWrapper {
+/*	.entryWrapper {
 		width: 70% !important;
 		left: 15% !important;
-	}
+	}*/
 }

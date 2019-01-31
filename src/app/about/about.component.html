@@ -11,7 +11,7 @@
 	</div>
 		
 	<!-- Skill list -->
-	<div id="skills">
+	<div id="skills" [@.disabled]="smallScreen">
 		<h3 id="skillLabel">
 			<mat-slide-toggle (click)="skillIndex = (skillIndex + 1) % 2"></mat-slide-toggle>
 			{{skillSet}}

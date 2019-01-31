@@ -41,6 +41,9 @@
 		padding-top: 5%;
 		padding-bottom: 5%;
 	}
+	.bar-container {
+		margin-bottom: 2%;
+	}
 }
 
 @media screen and (max-width: 400px) {
