@@ -82,8 +82,15 @@ if (window.innerWidth <= 600) {
           animate('1s ease-in-out',
             style({ transform: 'translateY(0%)', opacity: 1})
             )
-          ], {optional: true})
+          ], {optional: true}),
 
+
+        query(':enter .bar-fill-container', [
+          style({ width: '0%'}),
+          animate('1s ease-in-out',
+            style({ width: '100%'})
+            )
+          ], {optional: true}),
 
         // query(':enter .entryWrapper', [
         //   style({transform: 'translateY(100%)'}),
@@ -148,9 +155,14 @@ if (window.innerWidth <= 600) {
           animate('1s ease-in-out',
             style({ transform: 'translateY(0%)', opacity: 1})
             )
-          ], {optional: true})
+          ], {optional: true}),
 
-
+        query(':enter .bar-fill-container', [
+          style({ width: '0%'}),
+          animate('1s ease-in-out',
+            style({ width: '100%'})
+            )
+          ], {optional: true}),
         // query(':enter .entryWrapper', [
         // 	style({transform: 'translateY(100%)'}),
         // 	animate('.75s ease-in-out',

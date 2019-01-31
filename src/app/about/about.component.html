@@ -17,23 +17,23 @@
 			{{skillSet}}
 		</h3>
 		<!-- Technical Skills -->
-		<app-skillbar [skill]="'HTML'" [width]="'94.25%'" *ngIf="skillSet=='Technical Skills'"></app-skillbar>
-		<app-skillbar [skill]="'Javascript'" [width]="'90%'" *ngIf="skillSet=='Technical Skills'"></app-skillbar>
-		<app-skillbar [skill]="'python'" [width]="'90%'" *ngIf="skillSet=='Technical Skills'"></app-skillbar>
-		<app-skillbar [skill]="'sails.js'" [width]="'85%'" *ngIf="skillSet=='Technical Skills'"></app-skillbar>	
-		<app-skillbar [skill]="'node.js'" [width]="'80%'" *ngIf="skillSet=='Technical Skills'"></app-skillbar>
-		<app-skillbar [skill]="'angular'" [width]="'75%'" *ngIf="skillSet=='Technical Skills'"></app-skillbar>
-		<app-skillbar [skill]="'CSS'" [width]="'65%'" *ngIf="skillSet=='Technical Skills'"></app-skillbar>
-		<app-skillbar [skill]="'sklearn'" [width]="'60%'" *ngIf="skillSet=='Technical Skills'"></app-skillbar>
+		<app-skillbar [skill]="'HTML'" [width]="'94.25%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'Javascript'" [width]="'90%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'python'" [width]="'90%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'sails.js'" [width]="'85%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>	
+		<app-skillbar [skill]="'node.js'" [width]="'80%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'angular'" [width]="'75%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'CSS'" [width]="'65%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'sklearn'" [width]="'60%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
 
 		<!-- Learning Science Skills -->
-		<app-skillbar [skill]="'Instructional Design'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'"></app-skillbar>
-		<app-skillbar [skill]="'Domain: Math'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'"></app-skillbar>	
-		<app-skillbar [skill]="'Domain: Computer Science'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'"></app-skillbar>
-		<app-skillbar [skill]="'Intelligent Tutor Design'" [width]="'90%'" *ngIf="skillSet=='Learning Science Skills'"></app-skillbar>
-		<app-skillbar [skill]="'Educational Data Science'" [width]="'85%'" *ngIf="skillSet=='Learning Science Skills'"></app-skillbar>
-		<app-skillbar [skill]="'Cogntive Task Analysis'" [width]="'70%'" *ngIf="skillSet=='Learning Science Skills'"></app-skillbar>
-		<app-skillbar [skill]="'Educational AI'" [width]="'70%'" *ngIf="skillSet=='Learning Science Skills'"></app-skillbar>		
-		<app-skillbar [skill]="'Transformational Game Design'" [width]="'65%'" *ngIf="skillSet=='Learning Science Skills'"></app-skillbar>
+		<app-skillbar [skill]="'Instructional Design'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'Domain: Math'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>	
+		<app-skillbar [skill]="'Domain: Computer Science'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'Intelligent Tutor Design'" [width]="'90%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'Educational Data Science'" [width]="'85%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'Cogntive Task Analysis'" [width]="'70%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+		<app-skillbar [skill]="'Educational AI'" [width]="'70%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>		
+		<app-skillbar [skill]="'Transformational Game Design'" [width]="'65%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
 	</div>
 </div>

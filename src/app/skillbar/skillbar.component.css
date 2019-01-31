@@ -6,6 +6,11 @@
 	/*background-color: #59586C;*/
 	margin-top: 2%;
 }
+.bar-fill-container {
+	display: block;
+	position: relative;
+	width: 100%;
+}
 .bar-fill {
 	display: block;
 	position: relative;
@@ -19,16 +24,12 @@
 	position: absolute;
 	top:0%;
 	left: 0%;
-	height: 100%;
 	padding-left: 2%;
 	padding-right: 2%;
-	/*vertical-align: 500%;*/
+	vertical-align: middle;
+	padding-top: 5px
 }
-.label-text {
-	position: relative;
-	display: block;
-	top: 20%;
-}
+
 .percentage {
 	position: absolute;
 	right: 0%;
