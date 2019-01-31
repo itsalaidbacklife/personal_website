@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import {MDCSwitch} from '@material/switch';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+	selector: 'app-about',
+	templateUrl: './about.component.html',
+	styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+	skillSet: String;
+	constructor() { }
 
-  constructor() { }
+	switchControl: MDCSwitch;
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+		this.skillSet = "Technical Skills";
+		this.switchControl = new MDCSwitch(document.querySelector('.mdc-switch'));
+	}
 
 }
