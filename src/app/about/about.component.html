@@ -13,8 +13,9 @@
 	<!-- Skill list -->
 	<div id="skills" [@.disabled]="smallScreen">
 		<h3 id="skillLabel">
+			Development
 			<mat-slide-toggle (click)="skillIndex = (skillIndex + 1) % 2"></mat-slide-toggle>
-			{{skillSet}}
+			Learning Science
 		</h3>
 		<!-- Technical Skills -->
 		<app-skillbar [skill]="'HTML'" [width]="'94.25%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
