@@ -7,14 +7,19 @@ import {MDCSwitch} from '@material/switch';
 	styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-	skillSet: String;
+	skillSetNames: Array<string>;
+	skillIndex: number;
+	get skillSet() {
+		return this.skillSetNames[this.skillIndex];
+	}
+	// set skillSet(val) {
+	// 	this.skillIndex = val;
+	// }
 	constructor() { }
 
-	switchControl: MDCSwitch;
-
 	ngOnInit() {
-		this.skillSet = "Technical Skills";
-		this.switchControl = new MDCSwitch(document.querySelector('.mdc-switch'));
+		this.skillIndex = 0;
+		this.skillSetNames = ["Technical Skills", "Learning Science Skills"];
 	}
 
 }
