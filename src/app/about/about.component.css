@@ -23,9 +23,9 @@ div p a {
 		display: inline-block;
 		margin-left: 4%;
 		position: relative;
-		text-align: center;
+		text-align: left;
 		width: 33%;
-		font-size: 16pt;
+		font-size: 1.5em;
 	}
 	#skills {
 		display: inline-block;

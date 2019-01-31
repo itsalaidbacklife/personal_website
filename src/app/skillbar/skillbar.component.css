@@ -3,12 +3,14 @@
 	position: relative;
 	width: 100%;
 	background-color: #A4A3A8;
+	/*background-color: #59586C;*/
 	margin-top: 2%;
 }
 .bar-fill {
 	display: block;
 	position: relative;
-	background-color: #9B9BD2;
+	/*background-color: #9B9BD2;*/
+	background-color: #6C6CB3;
 	padding: 3%;
 	height: inherit;
 }
