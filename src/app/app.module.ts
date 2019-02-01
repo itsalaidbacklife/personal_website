@@ -17,6 +17,7 @@ import { FracTutorComponent } from './frac-tutor/frac-tutor.component';
 import { CuttleBotComponent } from './cuttle-bot/cuttle-bot.component';
 import { NoneducationalPortfolioComponent } from './noneducational-portfolio/noneducational-portfolio.component';
 import { SurgeryDetailsComponent } from './surgery-details/surgery-details.component';
+import { EgiaComponent } from './egia/egia.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SurgeryDetailsComponent } from './surgery-details/surgery-details.compo
     FracTutorComponent,
     CuttleBotComponent,
     NoneducationalPortfolioComponent,
-    SurgeryDetailsComponent
+    SurgeryDetailsComponent,
+    EgiaComponent
   ],
   imports: [
     BrowserModule,
