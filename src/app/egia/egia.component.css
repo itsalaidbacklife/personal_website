@@ -36,7 +36,7 @@ img {
 }
 #problemAndSolution {
 	/*top: -10%;*/
-	bottom: 30px;
+	/*bottom: 30px;*/
 	margin-top: 0%;
 	/*height: 34%;*/
 }
@@ -59,7 +59,7 @@ img {
 }
 
 #results {
-	bottom: 30px;
+	/*bottom: 30px;*/
 	margin-bottom: 2%;
 }
 
@@ -71,6 +71,7 @@ img {
 
 #demoLinkText {
 	text-align: center;
+	
 	margin-bottom: 2%;
 }
 
