@@ -1,5 +1,5 @@
 * {
-  font-family: Bookman  Old Style, sans-serif;
+  font-family: Bookman  Old Style, sans-serif !important;
 }
 
 html, body, app-root {
@@ -100,4 +100,4 @@ body {
   }
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif !important; }
