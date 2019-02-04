@@ -1,0 +1,46 @@
+global skill_definitions = [
+	{
+		ruleName: "step1ReasonSameDen",
+		skillName: "step1Reason_sameDenominator",
+		category: "1.1",
+		opportunities: 1,
+		label: "Justify Direct Comparision for same Denominator"
+	},
+	{
+		ruleName: "step1ReasonSameNum",
+		skillName: "step1Reason_sameNumerator",
+		category: "1.1",
+		opportunities: 1,
+		label: "Justify Direct Comparision for same Numerator"
+	},
+    {
+    	ruleName: "step1ReasonUnlikeFractions",
+		skillName: "step1Reason_unlikeFractions",
+		category: "1.1",
+		opportunities: 1,
+		label: "Justify Direct Comparision for Unlike Fractions"
+	},
+
+    {
+    	ruleName: "step1ReasonCompareToOne",
+		skillName: "step1Reason_ComparetoOne",
+		category: "1.1",
+		opportunities: 1,
+		label: "Justify Direct Comparision by comparing to one"
+      
+    },
+    {
+    	ruleName: "step2ReasonProduct",
+		skillName: "step2Reason_Product",
+		category: "1.1",
+		opportunities: 1,
+		label: "Recognize Product of Denominators"
+    },
+    {
+    	ruleName: "step2ReasonLCM",
+		skillName: "step2Reason_LCM",
+		category: "1.1",
+		opportunities: 1,
+		label: "Recognize LCM of Denominators"
+    },
+];
