@@ -44,6 +44,9 @@ a {
 }
 a:visited, a:link {
   color: #607D8B;
+  /*font-weight: bold;*/
+  /*border: 2px solid #FFFFFF; */
+  /*color: #A7A7D8;*/
 }
 a:hover {
   color: #039be5 !important;
