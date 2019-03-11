@@ -36,6 +36,15 @@
 	top: 20%;
 }
 
+
+/*Medium screens*/
+@media screen and (max-width: 1355px) and (min-width: 1001px) {
+	.bar-fill {
+		padding-top: 4.5% !important;
+		padding-bottom: 4.5% !important;
+	}
+}
+/*Small screens*/
 @media screen and (max-width: 600px) and (min-width: 400px){
 	.bar-fill {
 		padding-top: 5%;
@@ -46,6 +55,7 @@
 	}
 }
 
+/*Very small screens*/
 @media screen and (max-width: 400px) {
 	.bar-fill {
 		padding-top: 8%;
