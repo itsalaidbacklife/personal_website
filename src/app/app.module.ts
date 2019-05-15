@@ -18,6 +18,8 @@ import { CuttleBotComponent } from './cuttle-bot/cuttle-bot.component';
 import { NoneducationalPortfolioComponent } from './noneducational-portfolio/noneducational-portfolio.component';
 import { SurgeryDetailsComponent } from './surgery-details/surgery-details.component';
 import { EgiaComponent } from './egia/egia.component';
+import { ProofCrafterComponent } from './proof-crafter/proof-crafter.component';
+import { PictureAndExplanationComponent } from './picture-and-explanation/picture-and-explanation.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { EgiaComponent } from './egia/egia.component';
     CuttleBotComponent,
     NoneducationalPortfolioComponent,
     SurgeryDetailsComponent,
-    EgiaComponent
+    EgiaComponent,
+    ProofCrafterComponent,
+    PictureAndExplanationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,47 @@
+.pictureAndExplanation {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.imgWrapper {
+	display: inline-block;
+	position: relative;
+	width: 35%;
+	margin-bottom: 2%;
+	order: 1;
+}
+
+.imageLink {
+	height: 100%;
+	width: 98%;
+	left: 0%;
+	bottom: 0%;
+	border-radius: 5%;
+	display: inline-block;
+	position: absolute;
+	opacity: 0;
+}
+
+
+h3 {
+	text-align: center;
+	margin-top: -2%;
+}
+
+img {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	border-radius: 5%;
+}
+
+.paragraphText {
+	display: inline-block;
+	position: relative;
+	width: 30%;
+	font-size: 1.15em;
+	order: 2;
+}
