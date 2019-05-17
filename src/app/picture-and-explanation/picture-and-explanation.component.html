@@ -5,6 +5,8 @@
 			<a href="{{link}}" target="_blank" *ngIf="link" class="imageLink"></a>
 		<p>{{linkLabel}}</p>
 	</div>
-	<p class="paragraphText">{{text}}</p>
-
+	<div class="textWrapper">
+		<p class="paragraphText">{{text}}</p>
+		<p class="paragraphText" *ngIf="text2">{{text2}}</p>
+	</div>
 </div>

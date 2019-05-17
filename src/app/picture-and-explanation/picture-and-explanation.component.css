@@ -38,10 +38,14 @@ img {
 	border-radius: 5%;
 }
 
-.paragraphText {
+.textWrapper {
 	display: inline-block;
 	position: relative;
 	width: 30%;
+	order: 2;	
+}
+.paragraphText {
+	display: block;
+	position: relative;
 	font-size: 1.15em;
-	order: 2;
 }

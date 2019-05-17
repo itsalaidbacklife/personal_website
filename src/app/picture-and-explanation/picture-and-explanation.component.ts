@@ -9,6 +9,7 @@ export class PictureAndExplanationComponent implements OnInit {
 	@Input() title: string;
 	@Input() img: string;
 	@Input() text: string;
+	@Input() text2: string;
 	@Input() link: string;
 	@Input() linkLabel: string;
 	constructor() { }

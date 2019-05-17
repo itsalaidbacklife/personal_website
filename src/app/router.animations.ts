@@ -114,7 +114,7 @@ if (window.innerWidth <= 600) {
       // query('.entryWrapper', style({opacity: 0}), {optional: true}),
 
       /* 2 */ group([  // block executes in parallel
-        query(':enter #aboutContainer,  :enter #portfolioContainer', [
+        query(':enter #aboutContainer,  :enter #portfolioContainer, :enter #proofCrafterContainer', [
           style({ transform: 'translateX(100%)' }),
           animate('0.5s ease-out', style({ transform: 'translateX(0px)', position: 'relative' }))
         ], { optional: true }),
