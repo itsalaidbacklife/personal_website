@@ -1,51 +1,79 @@
 .pictureAndExplanation {
-	display: flex;
-	position: relative;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-.imgWrapper {
-	display: inline-block;
-	position: relative;
-	width: 35%;
-	margin-bottom: 2%;
-	order: 1;
-}
-
-.imageLink {
-	height: 100%;
-	width: 98%;
-	left: 0%;
-	bottom: 0%;
-	border-radius: 5%;
-	display: inline-block;
-	position: absolute;
-	opacity: 0;
-}
-
-
-h3 {
-	text-align: center;
-	margin-top: -2%;
-}
-
-img {
-	display: inline-block;
-	position: relative;
-	width: 100%;
-	border-radius: 5%;
-}
-
-.textWrapper {
-	display: inline-block;
-	position: relative;
-	width: 30%;
-	order: 2;	
-}
-.paragraphText {
 	display: block;
 	position: relative;
-	font-size: 1.15em;
 }
+
+/*Title*/
+.rowWrapper {
+	display: flex;
+	position: relative;
+	width: 100%;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;	
+}
+	.rowWrapper h3 {
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		width: 35%;
+		order: 1;
+	}
+
+	.rowWrapper span {
+		display: inline-block;
+		position: relative;
+		width: 35%;
+		order: 2;
+	}
+
+	.rowWrapper p {
+		display: inline-block;
+		position: relative;
+		width: 35%;
+		order: 1;
+	}
+
+/*Middle Row*/
+	.imgWrapper {
+		display: inline-block;
+		position: relative;
+		width: 35%;
+		order: 1;
+	}
+		img {
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			border-radius: 5%;
+		}
+		.imageLink {
+			display: inline-block;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			margin: 0px;
+			left: 0%;
+			bottom: 0%;
+			border-radius: 5%;
+			opacity: 0;
+		}
+
+	.textWrapper {
+		display: inline-block;
+		position: relative;
+		width: 35%;
+		order: 2;	
+	}
+
+		.rowWrapper .textWrapper .paragraphText {
+			display: block;
+			position: relative;
+			font-size: 1.15em;
+			width: 100%;
+		}
+
+/*Footer*/
+	.caption {
+		text-align: center;
+	}

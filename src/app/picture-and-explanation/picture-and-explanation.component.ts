@@ -11,7 +11,7 @@ export class PictureAndExplanationComponent implements OnInit {
 	@Input() text: string;
 	@Input() text2: string;
 	@Input() link: string;
-	@Input() linkLabel: string;
+	@Input() caption: string;
 	constructor() { }
 
 	ngOnInit() {

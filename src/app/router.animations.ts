@@ -114,7 +114,7 @@ if (window.innerWidth <= 600) {
       // query('.entryWrapper', style({opacity: 0}), {optional: true}),
 
       /* 2 */ group([  // block executes in parallel
-        query(':enter #aboutContainer,  :enter #portfolioContainer, :enter #proofCrafterContainer', [
+        query(':enter #aboutContainer,  :enter #portfolioContainer', [
           style({ transform: 'translateX(100%)' }),
           animate('0.5s ease-out', style({ transform: 'translateX(0px)', position: 'relative' }))
         ], { optional: true }),
@@ -141,6 +141,10 @@ if (window.innerWidth <= 600) {
         query(':enter #cuttleBotContainer', [
           style({ transform: 'translateY(200%)' }),
           animate('1.25s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+          ], {optional: true}),
+        query(':enter #proofCrafterContainer', [
+          style({ transform: 'translateY(110%)' }),
+          animate('1s ease-out', style({ transform: 'translate(0px, 0%)', position: 'relative'}))
           ], {optional: true}),
         // query(':enter .entryWrapper', stagger(400, [
         //   style({ transform: 'translateY(100%)'}),

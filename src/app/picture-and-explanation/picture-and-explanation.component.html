@@ -1,12 +1,20 @@
 <div class="pictureAndExplanation">
-	<div class="imgWrapper">
-		<h3 *ngIf="title">{{title}}</h3>
-			<img *ngIf="img" src="./assets/{{img}}.PNG">
-			<a href="{{link}}" target="_blank" *ngIf="link" class="imageLink"></a>
-		<p>{{linkLabel}}</p>
+	<div class="rowWrapper" *ngIf="title">
+		<h3 >{{title}}</h3>
+		<span></span>
 	</div>
-	<div class="textWrapper">
-		<p class="paragraphText">{{text}}</p>
-		<p class="paragraphText" *ngIf="text2">{{text2}}</p>
+	<div class="rowWrapper">
+		<div class="imgWrapper">
+				<img *ngIf="img" src="./assets/{{img}}.PNG">
+				<a href="{{link}}" target="_blank" *ngIf="link" class="imageLink"></a>
+		</div>
+		<div class="textWrapper">
+			<p class="paragraphText">{{text}}</p>
+			<p class="paragraphText" *ngIf="text2">{{text2}}</p>
+		</div>
+	</div>
+	<div class="rowWrapper">
+		<p *ngIf="caption" class="linkLabel">{{caption}}</p>
+		<span></span>
 	</div>
 </div>
