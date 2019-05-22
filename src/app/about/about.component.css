@@ -8,14 +8,27 @@ h2 {
 	position: relative;
 	left: 5%;
 }
-#skillLabel {
-	text-align: left;
-	font-size: 16pt;
-}
+	#skillLabel {
+		text-align: left;
+		font-size: 16pt;
+	}
 
+	mat-slide-toggle label .mat-slide-toggle-bar-no-side-margin {
+		background-color: rgba(176,190,197,.54) !important;
+	}
+
+	h3 {
+		font-weight: bold;
+	}
+	span {
+		font-family: "PT Mono" !important;
+		color: #DB2A33;
+	  /*color: #ff4081;*/
+	}
 div p a {
 	margin:	0px;
 }
+
 
 /*Large Screens only*/
 @media screen and (min-width: 1000px) {

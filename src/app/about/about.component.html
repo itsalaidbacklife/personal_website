@@ -13,9 +13,13 @@
 	<!-- Skill list -->
 	<div id="skills" [@.disabled]="smallScreen">
 		<h3 id="skillLabel">
-			Development
-			<mat-slide-toggle (click)="skillIndex = (skillIndex + 1) % 2"></mat-slide-toggle>
-			{{learningLabel}}
+			<span>
+				Development
+			</span>
+			<mat-slide-toggle (click)="skillIndex = (skillIndex + 1) % 2" color="#FF9A00" style="background-color: background-color: rgba(176,190,197,.54)"></mat-slide-toggle>
+			<span class="learningLabel">
+				{{learningLabel}}
+			</span>
 		</h3>
 		<!-- Technical Skills -->
 		<app-skillbar [skill]="'HTML'" [width]="'94.25%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>

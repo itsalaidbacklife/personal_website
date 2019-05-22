@@ -20,7 +20,9 @@
 	height: inherit;
 }
 .label {
+	font-family: "PT Mono" !important;
 	background-color: #6C6CB3;
+	color: #FFF;
 	position: absolute;
 	top:0%;
 	left: 0%;
