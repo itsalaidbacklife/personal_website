@@ -14,10 +14,16 @@ h1 {
   /*font-family: Arial, Helvetica, sans-serif;*/
   font-size: 250%;
 }
+
+.fixedHeader {
+  color: rgb(47, 84, 150) !important;
+}
+
 h2, h3 {
   /*color: #444;*/
   /*color: #E5E5E5;*/
-  color: #000;
+  /*color: #000;*/
+  color: #DB2A33;
   /*color: #FFF;*/
   /*font-family: Arial, Helvetica, sans-serif;*/
   font-weight: lighter;
