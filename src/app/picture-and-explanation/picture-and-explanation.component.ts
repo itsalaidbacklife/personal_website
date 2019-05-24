@@ -12,8 +12,22 @@ export class PictureAndExplanationComponent implements OnInit {
 	@Input() text2: string;
 	@Input() link: string;
 	@Input() caption: string;
+	@Input() smallScreenCaption: string;
+	get footerVisibility() {
+		if (window.innerWidth > 1000) {
+			return 'visible';
+		} else {
+			return 'hidden';
+		}
+	}
+	get screenIsSmall() {
+		if (window.innerWidth < 1000) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 	constructor() { }
-
 	ngOnInit() {
 	}
 

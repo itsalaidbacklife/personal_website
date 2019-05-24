@@ -1,19 +1,26 @@
 <div class="pictureAndExplanation">
-	<div class="rowWrapper" *ngIf="title">
+	<div class="rowWrapper titleWrapper" *ngIf="title">
 		<h3 >{{title}}</h3>
 		<span></span>
 	</div>
 	<div class="rowWrapper">
-		<div class="imgWrapper">
-				<img *ngIf="img" src="./assets/{{img}}.PNG">
+		<!-- Optional image on the left -->
+		<div class="imgWrapper" *ngIf="img">
+				<img src="./assets/{{img}}.PNG">
 				<a href="{{link}}" target="_blank" *ngIf="link" class="imageLink"></a>
 		</div>
-		<div class="textWrapper">
+
+		<!-- Small Screen footer -->
+		<p *ngIf="screenIsSmall" class="smallScreenFooter">{{smallScreenCaption}} <a href="">click here</a> </p>
+
+		<!-- Optional text on the right (up to 2 paragraphs) -->
+		<div class="textWrapper" *ngIf="text">
 			<p class="paragraphText">{{text}}</p>
 			<p class="paragraphText" *ngIf="text2">{{text2}}</p>
 		</div>
 	</div>
-	<div class="rowWrapper footer">
+	<!-- Large screen footer -->
+	<div *ngIf="!screenIsSmall" class="rowWrapper footer">
 		<p *ngIf="caption" class="caption">{{caption}}</p>
 		<span></span>
 	</div>
