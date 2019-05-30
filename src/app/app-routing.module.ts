@@ -11,6 +11,8 @@ import { SurgeryDetailsComponent } from './surgery-details/surgery-details.compo
 import { EgiaComponent } from './egia/egia.component';
 import { ProofCrafterComponent } from './proof-crafter/proof-crafter.component';
 import { CuttleOverviewComponent } from './cuttle-overview/cuttle-overview.component';
+import { CuttleArenaComponent } from './cuttle-arena/cuttle-arena.component';
+import { CuttleMLComponent } from './cuttle-ml/cuttle-ml.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -21,6 +23,8 @@ const routes: Routes = [
 	{ path: 'fracTutor', component: FracTutorComponent, data: {state: 'fracTutorDetails'}},
 	{ path: 'cuttleOverview', component: CuttleOverviewComponent, data: {state: 'cuttleOverview'}},
 	{ path: 'cuttleBot', component: CuttleBotComponent, data: {state: 'cuttleBotDetails'}},
+	{ path: 'cuttleML', component: CuttleMLComponent, data: {state: 'cuttleMLDetails'}},
+	{ path: 'cuttleArena', component: CuttleArenaComponent, data: {state: 'cuttleArenaDetails'}},
 	{ path: 'vascular-surgery', component:SurgeryDetailsComponent, data: {state: 'vascular-surgery'} },
 	{ path: 'otherWork', component: NoneducationalPortfolioComponent, data: {state: 'otherWork'} },
 	{ path: 'intro-cs', component: EgiaComponent, data: {state: 'egia'} },

@@ -21,6 +21,8 @@ import { EgiaComponent } from './egia/egia.component';
 import { ProofCrafterComponent } from './proof-crafter/proof-crafter.component';
 import { PictureAndExplanationComponent } from './picture-and-explanation/picture-and-explanation.component';
 import { CuttleOverviewComponent } from './cuttle-overview/cuttle-overview.component';
+import { CuttleArenaComponent } from './cuttle-arena/cuttle-arena.component';
+import { CuttleMLComponent } from './cuttle-ml/cuttle-ml.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { CuttleOverviewComponent } from './cuttle-overview/cuttle-overview.compo
     EgiaComponent,
     ProofCrafterComponent,
     PictureAndExplanationComponent,
-    CuttleOverviewComponent
+    CuttleOverviewComponent,
+    CuttleArenaComponent,
+    CuttleMLComponent
   ],
   imports: [
     BrowserModule,
