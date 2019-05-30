@@ -139,13 +139,19 @@ if (window.innerWidth <= 600) {
           animate('1s ease-out', style({ transform: 'translate(0px, -22px)', position: 'relative'}))
           ], {optional: true}),
 
-        query(':enter #fracTutorContainer', [
-          style({ transform: 'translateY(150%)' }),
-          animate('1s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
-          ], {optional: true}),
         query(':enter #cuttleBotContainer', [
           style({ transform: 'translateY(200%)' }),
           animate('1.25s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+          ], {optional: true}),
+
+        query(':enter #cuttleMLContainer', [
+          style({ transform: 'translateY(110%)' }),
+          animate('1s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+          ], {optional: true}),
+
+        query(':enter #fracTutorContainer', [
+          style({ transform: 'translateY(150%)' }),
+          animate('1s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
           ], {optional: true}),
         query(':enter #proofCrafterContainer', [
           style({ transform: 'translateY(110%)' }),
