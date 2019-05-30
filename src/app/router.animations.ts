@@ -54,7 +54,7 @@ if (window.innerWidth <= 600) {
           animate('0.5s ease-in-out', style({ transform: 'translateX(-100%)', position: 'fixed' }))
         ], { optional: true }),
 
-        query(':enter #dimensionalAnalysisContainer', [
+        query(':enter #dimensionalAnalysisContainer, :enter #cuttleOverviewContainer', [
           style({ transform: 'translateY(100%)' }),
           animate('1s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
           ], {optional: true}),
@@ -129,9 +129,14 @@ if (window.innerWidth <= 600) {
           animate('0.5s ease-in-out', style({ transform: 'translateX(-100%)', position: 'fixed' }))
         ], { optional: true }),
 
-        query(':enter #dimensionalAnalysisContainer', [
+        query(':enter #dimensionalAnalysisContainer, :enter #cuttleOverviewContainer', [
           style({ transform: 'translateY(110%)' }),
           animate('1s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
+          ], {optional: true}),
+
+        query(':enter #cuttleOverviewContainer', [
+          style({ transform: 'translateY(110%)' }),
+          animate('1s ease-out', style({ transform: 'translate(0px, -22px)', position: 'relative'}))
           ], {optional: true}),
 
         query(':enter #fracTutorContainer', [

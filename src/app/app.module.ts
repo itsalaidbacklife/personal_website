@@ -20,6 +20,7 @@ import { SurgeryDetailsComponent } from './surgery-details/surgery-details.compo
 import { EgiaComponent } from './egia/egia.component';
 import { ProofCrafterComponent } from './proof-crafter/proof-crafter.component';
 import { PictureAndExplanationComponent } from './picture-and-explanation/picture-and-explanation.component';
+import { CuttleOverviewComponent } from './cuttle-overview/cuttle-overview.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PictureAndExplanationComponent } from './picture-and-explanation/pictur
     SurgeryDetailsComponent,
     EgiaComponent,
     ProofCrafterComponent,
-    PictureAndExplanationComponent
+    PictureAndExplanationComponent,
+    CuttleOverviewComponent
   ],
   imports: [
     BrowserModule,

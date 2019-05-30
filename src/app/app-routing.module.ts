@@ -10,6 +10,7 @@ import { NoneducationalPortfolioComponent } from './noneducational-portfolio/non
 import { SurgeryDetailsComponent } from './surgery-details/surgery-details.component';
 import { EgiaComponent } from './egia/egia.component';
 import { ProofCrafterComponent } from './proof-crafter/proof-crafter.component';
+import { CuttleOverviewComponent } from './cuttle-overview/cuttle-overview.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: 'about', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
 	{ path: 'contact', component: ContactComponent, data: {state: 'contact'} },
 	{ path: 'doseTutor', component: DetailsDimensionalAnalysisComponent, data: {state: 'portfolioDetails'} },
 	{ path: 'fracTutor', component: FracTutorComponent, data: {state: 'fracTutorDetails'}},
+	{ path: 'cuttleOverview', component: CuttleOverviewComponent, data: {state: 'cuttleOverview'}},
 	{ path: 'cuttleBot', component: CuttleBotComponent, data: {state: 'cuttleBotDetails'}},
 	{ path: 'vascular-surgery', component:SurgeryDetailsComponent, data: {state: 'vascular-surgery'} },
 	{ path: 'otherWork', component: NoneducationalPortfolioComponent, data: {state: 'otherWork'} },

@@ -1,0 +1,53 @@
+h2, h3, #summary {
+	text-align: center;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: bold;
+}
+#projectRow {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	/*align-items: center;*/
+	justify-content: space-evenly;
+}
+
+.projectEntry {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+}
+
+#entry0 {
+	order: 0;
+}
+
+#entry1 {
+	order: 1;
+}
+
+#entry2 {
+	order: 2;
+}
+
+img	{
+	display: block;
+	position: relative;
+	width: 100%;
+	z-index: -10;
+}
+
+a {
+	display: inline-block;
+	position: relative;
+	height: 100%;
+	margin: 0px;
+	padding: 4px;
+}
+
+.imgWrapper {
+	height: 60%;
+}
