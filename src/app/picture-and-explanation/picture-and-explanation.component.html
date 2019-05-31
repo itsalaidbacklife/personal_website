@@ -11,7 +11,7 @@
 		</div>
 
 		<!-- Small Screen footer -->
-		<p *ngIf="screenIsSmall" class="smallScreenFooter">{{smallScreenCaption}} <a href="">click here</a> </p>
+		<p *ngIf="screenIsSmall" class="smallScreenFooter">{{smallScreenCaption}} <a *ngIf="link" href="{{link}}">click here</a> </p>
 
 		<!-- Optional text on the right (up to 2 paragraphs) -->
 		<div class="textWrapper" *ngIf="text">

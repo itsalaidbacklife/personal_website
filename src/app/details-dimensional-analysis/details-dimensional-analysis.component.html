@@ -1,31 +1,25 @@
 <div id="dimensionalAnalysisContainer">
-	<div class="imgWrapper">
-		<h3>DoseTutor</h3>
-		<img src="./assets/cognitive tutor - dosetutor.PNG">
-		<a href="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd" target="_blank" [ngStyle]="{'visibility': imageLinkVisibility}"></a>
-		<p>Click image for demo</p>
-	</div>
+	
+	<app-picture-and-explanation 
+	title="DoseTutor" 
+	img="cognitive tutor - dosetutor"
+	link="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd"
+	caption="Click image for a demo"
+	smallScreenCaption="For a demo"
+	text="How much help do students need? With what level of granularity should we break down students' homework into steps? How can this granularity be optimized for each student?"
+	text2="DoseTutor addresses these challenges with dynamically-scaled scaffolding that breaks steps into substeps when students struggle"
+	></app-picture-and-explanation>
 
-	<div class="problemSolutionWrapper" id="problemAndSolution">
-		<p class="problemStatement">How much help do students need? With what level of granularity should we break down students' homework into steps? How can this granularity be optimized for each student?</p>
+	<app-picture-and-explanation 
+	img="dimentional-analysis-kg-expansion"
+	link="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd"
+	caption="Click image for a demo"
+	smallScreenCaption="For a demo"
+	text="DoseTutor is an Intelligent Tutoring System built using the Cognitive Tutor Authoring Tools (CTAT) developed at Carnegie Mellon University. It is designed to teach Veterinary Technicians to calculate drug dosages using dimensional analysis. The problem initially assumes students will require minimal assistence and splits the problem into only 4 steps."
+	text2="If students make mistakes on any of the original 4 steps, they are brought to a separate diaglog that splits the current step into 3-4 substeps. This allows advanced students to answer the question in a few simple steps, while modeling for struggling students how the sequence of information retrieval and calculation required to solve the problem can be broken into reasonably sized chunks."
+	></app-picture-and-explanation>
 
-		<p class="problemStatement">DoseTutor addresses these challenges with dynamically-scaled scaffolding that breaks steps into substeps when students struggle.</p>
-	</div>
-
-	<div class="imgWrapper" id="kg-expansion-wrapper">
-		<img src="./assets/dimentional-analysis-kg-expansion.PNG">
-		<a href="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd" target="_blank" [ngStyle]="{'visibility': imageLinkVisibility}"></a>
-	</div>
-
-
-	<div class="problemSolutionWrapper" id="details">
-		<p class="problemStatement">DoseTutor is an Intelligent Tutoring System built using the Cognitive Tutor Authoring Tools (CTAT) developed at Carnegie Mellon University. It is designed to teach Veterinary Technicians to calculate drug dosages using dimensional analysis. The problem initially assumes students will require minimal assistence and splits the problem into only 4 steps.</p>
-
-		<p class="problemStatement">If students make mistakes on any of the original 4 steps, they are brought to a separate diaglog that splits the current step into 3-4 substeps. This allows advanced students to answer the question in a few simple steps, while modeling for struggling students how the sequence of information retrieval and calculation required to solve the problem can be broken into reasonably sized chunks.</p>
-	</div>
 	<p id="demoLinkText" [ngStyle]="{'visibility': imageLinkVisibility}">Try a<a href="./assets/HTML/Assignment_2_with_expansion.html?question_file=../FinalBRDs/Problem 1.brd" target="_blank">demo.</a>Refresh the page to start over. Try making different mistakes to see different paths through the problem.</p>
 	<p id="noDemoText" [ngStyle]="{'visibility': smallScreenTextVisibility}">You must use a larger screen to try a demo; sorry!</p>
-</div>
-<!-- <div id="details">
-	<p>If students make mistakes on any of original 4 steps, they are brought to a separate diaglog that splits the current step into 3-4 substeps. This models for struggling students how the long chain of calculations required to answer the question can be broken into reasonably sized chunks, while allowing advanced students to answer the question in a few simple steps.</p>
-</div> -->
+
+</div> <!-- End container for this component -->

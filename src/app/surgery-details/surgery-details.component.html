@@ -1,35 +1,30 @@
 <div id="cuttleBotContainer">
-	<div class="imgWrapper">
-		<h3>Plastic Surgery Education</h3>
-		<img src="./assets/course design - vascular surgery.PNG">
-		<!-- <a href="https://github.com/Human-AI-Interaction/cuttle-bot" target="_blank" [ngStyle]="{'visibility': imageLinkVisibility}"></a> -->
-	</div>
 
-	<div class="problemSolutionWrapper" id="problemAndSolution">
-		<p class="problemStatement">How can online coursework be made more effective? How can principles of learning science be brought to bear to improve learning outcomes for highly specialized experts?</p>
+	<app-picture-and-explanation 
+	title="Surgery Education" 
+	img="course design - vascular surgery"
+	caption="Identifying vascular lesions"
+	smallScreenCaption="Diagnostic multimedia"
+	text="How can online coursework be made more effective? How can principles of learning science be brought to bear to improve learning outcomes for highly specialized experts?"
+	text2="We created an online, hour-long module to teach the fundamentals of vascular surgery of the lower extremity to plastic surgery residents. The course was designed to iterate on an existing module used at the University of Pittsburgh Medical Center (UPMC) by applying learning science principles of multimedia and assessment."
+	></app-picture-and-explanation>
 
-		<p class="problemStatement">We created an online, hour-long module to teach the fundamentals of vascular surgery of the lower extremity to plastic surgery residents. The course was designed to iterate on an existing module used at the University of Pittsburgh Medical Center (UPMC) by applying learning science principles of multimedia and assessment.</p>
-	</div>
+	<app-picture-and-explanation 
+	img="surgery-cta"
+	caption="Model created with CTA"
+	smallScreenCaption="Diagnostic multimedia"
+	text="We used Cognitive Task Analysis (CTA) with domain experts to analyze and model the decision-making process for diagnosis and treatment of Peripheral Vascular Disease. We worked with partners at the UPMC to specify, categorize, and prioritize the course's learning objectives to suit the needs of UPMC plastic surgery residents."
+	text2="Based on this data, we re-designed the course to increase interactivity, reduce redundancy, and segment the course content into managable chunks."
+	></app-picture-and-explanation>
 
-	<div class="imgWrapper" id="kg-expansion-wrapper">
-		<img src="./assets/surgery-cta.png">
-		<!-- <a href="https://github.com/Human-AI-Interaction/cuttle-bot" target="_blank" [ngStyle]="{'visibility': imageLinkVisibility}"></a> -->
-	</div>
+	<app-picture-and-explanation 
+	img="surgery-data"
+	caption="Summary of results"
+	smallScreenCaption="Summary of results"
+	text="We compared our new version of the course against a control version that replicated the original module's content as faithfully as possible in a randomly-assigned experimental study."
+	text2="Residents took a pretest, followed by a posttest. To the left is a box-and-whisker plot comparing Normalized Gains [(posttest - pretest)/(1-pretest)] across the two conditions. As you can see, the median Normalized Gain was notably higher among students who received the new version of the course (Group B)."
+	></app-picture-and-explanation>
 
-
-	<div class="problemSolutionWrapper" id="details">
-		<p class="problemStatement">We used Cognitive Task Analysis (CTA) with domain experts to analyze and model the decision-making process for diagnosis and treatment of Peripheral Vascular Disease. We worked with partners at the UPMC to specify, categorize, and prioritize the course's learning objectives to suit the needs of UPMC plastic surgery residents.</p>
-
-		<p class="problemStatement">Based on this data, we re-designed the course to increase interactivity, reduce redundancy, and segment the course content into managable chunks.</p>
-	</div>
-
-	<div class="imgWrapper" id="dataWrapper">
-		<img src="./assets/surgery-data.png">
-	</div>
-	<div class="problemSolutionWrapper" id="results">
-		<p class="problemStatement">We compared our new version of the course against a control version that replicated the original module's content as faithfully as possible in a randomly-assigned experimental study.</p>
-		<p class="problemStatement">Residents took a pretest, followed by a posttest. To the left is a box-and-whisker plot comparing Normalized Gains [(posttest - pretest)/(1-pretest)] across the two conditions. As you can see, the median Normalized Gain was notably higher among students who received the new version of the course (Group B).</p>
-	</div>
 	<p id="demoLinkText"><a target="_blank" href="./assets/Surgery Course Report.pdf">Read the full report</a></p>
-	<!-- <p id="noDemoText" [ngStyle]="{'visibility': smallScreenTextVisibility}">You must use a larger screen to try a demo; sorry!</p> -->
-</div>
+
+</div> <!-- End of component -->
