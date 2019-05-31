@@ -136,7 +136,7 @@ if (window.innerWidth <= 600) {
 
         query(':enter #cuttleOverviewContainer', [
           style({ transform: 'translateY(110%)' }),
-          animate('1s ease-out', style({ transform: 'translate(0px, -22px)', position: 'relative'}))
+          animate('.65s ease-out', style({ transform: 'translate(0px, -22px)', position: 'relative'}))
           ], {optional: true}),
 
         query(':enter #cuttleBotContainer', [
@@ -144,8 +144,8 @@ if (window.innerWidth <= 600) {
           animate('1.25s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
           ], {optional: true}),
 
-        query(':enter #cuttleMLContainer', [
-          style({ transform: 'translateY(110%)' }),
+        query(':enter #cuttleMLContainer, :enter #cuttleArenaContainer', [
+          style({ transform: 'translateY(150%)' }),
           animate('1s ease-out', style({ transform: 'translate(0px, 0px)', position: 'relative'}))
           ], {optional: true}),
 
