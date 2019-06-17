@@ -6,7 +6,7 @@ h2 {
 	height: 500px;
 	width: 100%;
 	position: relative;
-	left: 5%;
+	/*left: 5%;*/
 }
 	#skillLabel {
 		text-align: left;
@@ -32,21 +32,29 @@ div p a {
 
 /*Large Screens only*/
 @media screen and (min-width: 1000px) {
+	#aboutContainer {
+		display: flex;
+		flex-direction: row;
+		/*align-items: center;*/
+		justify-content: space-evenly;
+	}
 	#spiel {
 		display: inline-block;
-		margin-left: 4%;
+		/*margin-left: 4%;*/
 		position: relative;
 		text-align: left;
 		width: 33%;
 		font-size: 1.25em;
+		order: 1;
 	}
 	#skills {
 		display: inline-block;
+		order: 2;
 		/*position: relative;*/
-		position: absolute;
+		/*position: absolute;*/
 		/*left: 48%;*/
-		margin-left: 15%;
-		width: 30%;
+		/*margin-left: 12%;*/
+		width: 31%;
 		font-weight: bold;
 	}
 	#logo {

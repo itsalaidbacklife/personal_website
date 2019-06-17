@@ -46,7 +46,7 @@ export class AboutComponent implements OnInit {
 		return this.skillSetNames[this.skillIndex];
 	}
 	get learningLabel() {
-		if (this.smallScreen || window.innerWidth < 1220) {
+		if (this.smallScreen || window.innerWidth < 1380) {
 			return "Pedagogy"
 		} else {
 			return "Learning Science"
