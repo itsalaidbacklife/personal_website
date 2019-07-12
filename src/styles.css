@@ -95,6 +95,7 @@ html {
 
 img {
   border: 2px solid #000;
+  box-sizing: border-box; /* Include border in width calculation */
 }
 
 body {
