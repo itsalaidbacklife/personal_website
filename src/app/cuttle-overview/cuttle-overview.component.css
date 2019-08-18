@@ -38,18 +38,25 @@ img	{
 	position: relative;
 	width: 100%;
 	border-radius: 3%;
+	box-sizing: border-box;
 	z-index: -10;
 }
 
 a {
-	display: inline-block;
-	position: relative;
+	display: block;
+	position: absolute;
 	height: 100%;
+	width: 100%;
 	margin: 0px;
-	padding: 4px;
+	padding: 0px;
 	border-radius: 3%;
+	top: 0;
+	box-sizing: border-box;
+	opacity: .8;
 }
 
 .imgWrapper {
-	height: 60%;
+	display: inline-block;
+	position: relative;
+	/*height: 60%;*/
 }
