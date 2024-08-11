@@ -82,11 +82,10 @@ a:hover {
 
 html {
   /*color: #E5E5E5;*/
-  color: #000;
+  color: #FFF;
   /*color: #FFF;*/
   background-repeat: no-repeat;
-  background-color: #FCFCFC;
-  /*background-color: #000;*/
+  background-color: #000;
   /*background-color: #0E0826;*/
   z-index: -1;
   padding: none;
