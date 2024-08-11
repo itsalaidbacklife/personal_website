@@ -23,6 +23,10 @@
 	max-width: 200px;
 }
 
+#intro-paragraph {
+	font-size: 20px;
+}
+
 /*Large Screens only*/
 @media screen and (min-width: 1000px) {
 	#aboutContainer {

@@ -9,6 +9,7 @@ import {
   transition,
   query
 } from '@angular/animations';
+import { TextWithMetaData } from './highlighted-paragraph/highlighted-paragraph.component';
 
 @Component({
 	selector: 'app-about',
@@ -38,6 +39,13 @@ import {
 export class AboutComponent implements OnInit {
 	skillSetNames: Array<string>;
 	skillIndex: number;
+	introText: Array<TextWithMetaData> = [
+		{ str: "I'm Currently the ", highlighted: false},
+		{ str: "Director of Engineering", highlighted: true },
+		{ str: "at the ASSISTments Foundation, an Ed-Tech nonprofit, and I'm the ", highlighted: false },
+		{ str: "creator and lead maintainer ", highlighted: true },
+		{ str: "of the open source card battler cuttle.cards", highlighted: false },
+	];
 
 	get smallScreen() {
 		return window.innerWidth < 600;

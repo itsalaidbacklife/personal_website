@@ -1,3 +1,5 @@
 <p>
-  highlighted-paragraph works!
+  <span *ngFor="let chunk of text" [ngClass]="{'highlighted': chunk.highlighted}">
+    {{ chunk.str }}
+  </span>
 </p>
