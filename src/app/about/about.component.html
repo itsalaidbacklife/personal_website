@@ -1,44 +1,20 @@
 <div id="aboutContainer">
-	<div id="spiel">
-		<!-- <h3 id="spielLabel">Me</h3> -->
-		<!-- <img id="logo" src="./assets/RyanTattoo_v03.jpg"> -->
-		<p>I am deeply passionate about education. In the next ten years, web technologies will revolutionize classrooms by elevating educational platforms from digitized textbooks to interactive educational experiences that guide students with custom feedback and presentation of the material tailored to their needs. 
-
-			<br> <br>
-			My ambition to take part in restructuring technology's role in the classroom has led me to study at Carnegie Mellon's Masters in Educational Technology and Applied Learning Science (METALS) program, where I'm enrolled as a full-time student.
-			<!-- <a routerLink="/contact">Let's change the game.</a>  -->
-		</p>
-	</div>
-		
-	<!-- Skill list -->
-	<div id="skills" [@.disabled]="smallScreen">
-		<h3 id="skillLabel">
-			<span>
-				Development
-			</span>
-			<mat-slide-toggle (click)="skillIndex = (skillIndex + 1) % 2"  style="background-color: background-color: rgba(176,190,197,.54)"></mat-slide-toggle>
-			<span class="learningLabel">
-				{{learningLabel}}
-			</span>
-		</h3>
-		<!-- Technical Skills -->
-		<app-skillbar [skill]="'HTML'" [width]="'94.25%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Javascript'" [width]="'90%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'python'" [width]="'90%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'sails.js'" [width]="'85%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>	
-		<app-skillbar [skill]="'node.js'" [width]="'80%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'angular'" [width]="'75%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'CSS'" [width]="'65%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'sklearn'" [width]="'60%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-
-		<!-- Learning Science Skills -->
-		<app-skillbar [skill]="'Instructional Design'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Domain: Math'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>	
-		<app-skillbar [skill]="'Domain: Computer Science'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Intelligent Tutor Design'" [width]="'90%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Educational Data Science'" [width]="'85%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Cognitive Task Analysis'" [width]="'70%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Educational AI'" [width]="'70%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>		
-		<app-skillbar [skill]="'Games for Learning'" [width]="'65%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-	</div>
+	<article class="article">
+		<div class="article-column">
+			<h1 class="h1">
+				Ryan
+				<br>
+				Emberling
+			</h1>
+			<img src="../../assets/ryan_emberling_illustrated_portrait.png" alt="Illustrated portrait of Ryan Emberling, bearded, smiling, with wavy brown hair" class="about-img">
+		</div>
+		<div class="article-column">
+			<p>
+				I lead teams, make software, and mentor technical professionals.
+			</p>
+			<p>
+				I'm Currently the Director of Engineering at the ASSISTments Foundation, an Ed-Tech nonprofit, and I'm the creator and lead maintainer of the open source card battler cuttle.cards
+			</p>
+		</div>
+	</article>
 </div>
