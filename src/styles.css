@@ -1,5 +1,4 @@
 * {
-  /*font-family: "EB Garamond", Garamond, serif !important;*/
   font-family: "Open Sans", sans-serif !important;
 }
 
@@ -8,10 +7,7 @@ html, body, app-root {
 }
 
 h1 {
-  /*color: #369;*/
-  /*color: #E5E5E5;*/
   color: #FFF;
-  /*font-family: Arial, Helvetica, sans-serif;*/
   font-size: 250%;
 }
 
@@ -20,17 +16,10 @@ h1 {
 }
 
 h2, h3 {
-  /*color: #444;*/
-  /*color: #E5E5E5;*/
-  /*color: #000;*/
   color: #DB2A33;
-  /*color: #FFF;*/
-  /*font-family: Arial, Helvetica, sans-serif;*/
   font-weight: lighter;
   font-family: 'Lato', sans-serif !important;
   font-family: "PT Mono" !important;
-  /*font-family: Bookman Old Style, sans-serif !important;*/
-  /*font-size: 100%;*/
 }
 h3 {
   font-size: 1.5em;
@@ -40,9 +29,6 @@ h3 {
   font-family: 'Lato', sans-serif !important;
   margin-bottom: 0%;
   font-size: 4em;
-  /*color: #FF2300;*/
-  /*color: #FF9A00;*/
-  /*color: #41FF00;*/
   color: rgb(47, 84, 150);
 }
 #subheader {
@@ -51,9 +37,6 @@ h3 {
   font-size: 2.5em;
   margin-top: .25%;
   margin-bottom: 1.5%;
-  /*color: #FF2300;*/
-  /*color: #FF9A00;*/
-  /*color: #41FF00;*/
   color: rgb(47, 84, 150);
 }
 a {
@@ -81,12 +64,9 @@ a:hover {
 }
 
 html {
-  /*color: #E5E5E5;*/
   color: #FFF;
-  /*color: #FFF;*/
   background-repeat: no-repeat;
   background-color: #000;
-  /*background-color: #0E0826;*/
   z-index: -1;
   padding: none;
   margin: none;
@@ -118,4 +98,3 @@ mat-slide-toggle label .mat-slide-toggle-bar-no-side-margin {
 }
 html, body { height: 100%; }
 body { margin: 0; }
-/*body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif !important; }*/
