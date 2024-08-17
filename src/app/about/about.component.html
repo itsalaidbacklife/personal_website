@@ -1,18 +1,32 @@
 <div id="aboutContainer">
-	<article class="article">
-		<div class="article-column">
-			<h1 class="h1">
-				Ryan
-				<br>
-				Emberling
-			</h1>
-			<img src="../../assets/ryan_emberling_illustrated_portrait.png" alt="Illustrated portrait of Ryan Emberling, bearded, smiling, with wavy brown hair" class="about-img">
-		</div>
-		<div id="intro-paragraph" class="article-column">
-			<p>
-				I lead teams, make software, and mentor technical professionals.
-			</p>
-			<app-highlighted-paragraph [text]="introText"></app-highlighted-paragraph>
-		</div>
-	</article>
+  <!-- Intro Paragraph -->
+  <article class="article">
+    <div class="article-column">
+      <h1 class="h1">
+        Ryan
+        <br />
+        Emberling
+      </h1>
+      <img
+        src="../../assets/ryan_emberling_illustrated_portrait.png"
+        alt="Illustrated portrait of Ryan Emberling, bearded, smiling, with wavy brown hair"
+        class="about-img"
+      />
+    </div>
+    <div id="intro-paragraph" class="article-column">
+      <p>I lead teams, make software, and mentor technical professionals.</p>
+      <app-highlighted-paragraph [text]="introText"></app-highlighted-paragraph>
+    </div>
+  </article>
+
+  <!-- Contact -->
+  <section class="section">
+    <div>
+      <h2>Contact</h2>
+      <h3>Ryan Emberling</h3>
+      <a href="mailto: ryan.emberling@gmail.com" class="link" id="email">
+        ryan.emberling@gmail.com
+      </a>
+    </div>
+  </section>
 </div>

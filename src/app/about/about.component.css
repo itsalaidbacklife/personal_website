@@ -29,13 +29,15 @@
 	line-height: 32px;
 }
 
-/*Large Screens only*/
-@media screen and (min-width: 1000px) {
-	#aboutContainer {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
+.link {
+	font-family: 'IBM Plex Mono';
+	font-size: 20px;
+	line-height: 24px;
+	color: #11C7A9;
+}
+
+.section {
+	display: block;
 }
 
 /*Small screens only*/
