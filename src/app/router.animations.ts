@@ -121,7 +121,7 @@ if (window.innerWidth <= 600) {
 
         query(':enter #contactContainer', [
         	style({ transform: 'translateX(100%)' }),
-        	animate('.5s ease-out', style({ transform: 'translate(2px, -25px)', position: 'relative'}))
+        	animate('.5s ease-out', style({ transform: 'translateX(0px)', position: 'relative'}))
         	], {optional: true}),
 
         query(':leave', [
