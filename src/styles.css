@@ -25,8 +25,24 @@ html, body, app-root {
   height: 100%;
 }
 
-h1 {
+html {
   color: #FFF;
+  background-repeat: no-repeat;
+  background-color: #000;
+  z-index: -1;
+  padding: none;
+  margin: none;
+}
+
+body {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
   font-size: 72px;
   line-height: 76px;
   font-weight: bold;
@@ -36,15 +52,7 @@ h1 {
   color: rgb(47, 84, 150) !important;
 }
 
-h2, h3 {
-  color: #DB2A33;
-  font-weight: lighter;
-  font-family: 'Lato', sans-serif !important;
-  font-family: "PT Mono" !important;
-}
-h3 {
-  font-size: 1.5em;
-}
+
 #header {
   text-align: center;
   font-family: 'Lato', sans-serif !important;
@@ -66,8 +74,6 @@ a {
   margin-top: 10px;
   display: inline-block;
   font-weight: bold;
-  /*background-color: #eee;*/
-  /*border-radius: 4px;*/
 }
 a:visited, a:link {
   color: #607D8B;
@@ -76,29 +82,9 @@ a:hover {
   color: #039be5 !important;
   background-color: #CFD8DC;
 }
-/*a.active {
-  color: #039be5;
-}*/
 .activeLink {
   color: #222222 !important;
   background-color: #CFD8DC;
-}
-
-html {
-  color: #FFF;
-  background-repeat: no-repeat;
-  background-color: #000;
-  z-index: -1;
-  padding: none;
-  margin: none;
-}
-
-body {
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
 }
 
 mat-slide-toggle label .mat-slide-toggle-bar-no-side-margin {
@@ -117,5 +103,3 @@ mat-slide-toggle label .mat-slide-toggle-bar-no-side-margin {
     font-size: 1.25em;
   }
 }
-html, body { height: 100%; }
-body { margin: 0; }
