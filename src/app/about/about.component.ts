@@ -40,11 +40,10 @@ export class AboutComponent implements OnInit {
 	skillSetNames: Array<string>;
 	skillIndex: number;
 	introText: Array<TextWithMetaData> = [
-		{ str: "I'm Currently the ", highlighted: false},
-		{ str: "Director of Engineering", highlighted: true },
-		{ str: "at the ASSISTments Foundation, an Ed-Tech nonprofit, and I'm the ", highlighted: false },
-		{ str: "creator and lead maintainer ", highlighted: true },
-		{ str: "of the open source card battler cuttle.cards", highlighted: false },
+		{ str: "I'm Currently the Director of Engineering at the", highlighted: false},
+		{ str: "ASSISTments Foundation,", highlighted: true },
+		{ str: " and I'm the creator and lead maintainer of the open source card battler", highlighted: false },
+		{ str: "cuttle.cards", highlighted: true },
 	];
 
 	get smallScreen() {
