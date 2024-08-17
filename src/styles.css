@@ -27,7 +27,8 @@ html, body, app-root {
 
 h1 {
   color: #FFF;
-  font-size: 250%;
+  font-size: 72px;
+  line-height: 76px;
   font-weight: bold;
 }
 
