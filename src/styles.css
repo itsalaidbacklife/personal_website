@@ -48,6 +48,12 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: bold;
+}
+
 .fixedHeader {
   color: rgb(47, 84, 150) !important;
 }
