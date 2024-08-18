@@ -23,6 +23,7 @@ import { CuttleOverviewComponent } from './portfolio/portfolio_pages/cuttle-over
 import { CuttleArenaComponent } from './portfolio/portfolio_pages/cuttle-overview/cuttle-arena/cuttle-arena.component';
 import { CuttleMLComponent } from './portfolio/portfolio_pages/cuttle-overview/cuttle-ml/cuttle-ml.component';
 import { HighlightedParagraphComponent } from './about/highlighted-paragraph/highlighted-paragraph.component';
+import { AboutSectionComponent } from './about/about-section/about-section.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HighlightedParagraphComponent } from './about/highlighted-paragraph/hig
     CuttleOverviewComponent,
     CuttleArenaComponent,
     CuttleMLComponent,
-    HighlightedParagraphComponent
+    HighlightedParagraphComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,
