@@ -55,6 +55,10 @@
 	margin-left: 8px;
 }
 
+.social-logo {
+	width: 24px;
+}
+
 /*Small screens only*/
 @media screen and (max-width: 1000px) {
 	#aboutContainer {
