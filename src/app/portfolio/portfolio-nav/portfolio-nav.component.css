@@ -7,12 +7,40 @@
 }
 
 .portfolio-nav-link {
+    position: relative;
     color: #FFFFFF;
     padding: 8px;
     border-radius: 8px;
+    z-index: 1;
+    transition: color .35s ease-in;
+}
+
+.portfolio-nav-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #27262D;
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: -1;
+    transition: transform .5s ease-in-out;
+}
+
+.portfolio-nav-link.last::after {
+    transform: translateX(-100%);
 }
 
 .portfolio-nav-link.active-link {
     color: #000000;
+}
+
+.portfolio-nav-link.active-link::after {
     background-color: #11C7A9;
+    transform: translateX(0);
+    opacity: 1;
 }

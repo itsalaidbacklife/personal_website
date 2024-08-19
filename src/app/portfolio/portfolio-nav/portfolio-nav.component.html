@@ -1,5 +1,5 @@
 <nav id="portfolio-nav">
-  <a *ngFor="let link of links" routerLink="{{link.route}}" class="portfolio-nav-link text-md" routerLinkActive="active-link">
+  <a *ngFor="let link of links; let i = index" routerLink="{{link.route}}" class="portfolio-nav-link text-md" [ngClass]="i ? 'last' : 'first'" routerLinkActive="active-link">
     {{ link.displayText }}
   </a>
 </nav>
