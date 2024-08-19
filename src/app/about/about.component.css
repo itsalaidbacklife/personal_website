@@ -40,6 +40,21 @@
 	display: block;
 }
 
+#contact-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 64px;
+}
+
+#contact-heading {
+	margin-top: 0px;
+}
+
+.social-link {
+	margin-left: 8px;
+}
+
 /*Small screens only*/
 @media screen and (max-width: 1000px) {
 	#aboutContainer {
