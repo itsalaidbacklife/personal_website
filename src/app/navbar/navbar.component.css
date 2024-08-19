@@ -1,7 +1,31 @@
-nav {
-	margin-left: 2%;
-	margin-top: 1%;
+#top-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px;
 }
-a {
-	margin-left: .5%; 
+
+#nav-logo {
+	margin: 0px;
 }
+
+#nav-links {
+	margin-right: 32px;
+}
+
+.nav-link {
+	padding: 5px 10px;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 8px;
+  }
+  a:visited, a:link {
+	color: #FFFFFF;
+  }
+  a:hover {
+	color: #11C7A9 !important;
+  }
+  .activeLink {
+	border-bottom: 1px solid #11C7A9 !important;
+  }
