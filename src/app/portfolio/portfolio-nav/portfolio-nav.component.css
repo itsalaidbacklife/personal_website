@@ -1,0 +1,18 @@
+#portfolio-nav {
+    display: inline-block;
+    position: relative;
+    padding: 12px;
+    background-color: #27262D;
+    border-radius: 16px;
+}
+
+.portfolio-nav-link {
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.portfolio-nav-link.active-link {
+    color: #000000;
+    background-color: #11C7A9;
+}

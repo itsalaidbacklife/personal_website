@@ -16,7 +16,11 @@ import { CuttleMLComponent } from './portfolio/portfolio_pages/cuttle-overview/c
 const routes: Routes = [
 	{ path: '', redirectTo: 'about', pathMatch: 'full' },
 	{ path: 'about', component: AboutComponent, data: {state: 'about'} },
-	{ path: 'portfolio', component: PortfolioComponent, data: {state: 'portfolio'} },
+	{ path: 'portfolio', component: PortfolioComponent, data: {state: 'portfolio'}, children: [
+		{ path: '', redirectTo: 'assistments', pathMatch: 'full' },
+		{ path: 'assistments', component: ProofCrafterComponent },
+		{ path: 'cuttle', component: CuttleOverviewComponent },
+	] },
 	{ path: 'contact', component: ContactComponent, data: {state: 'contact'} },
 	{ path: 'doseTutor', component: DetailsDimensionalAnalysisComponent, data: {state: 'portfolioDetails'} },
 	{ path: 'fracTutor', component: FracTutorComponent, data: {state: 'fracTutorDetails'}},

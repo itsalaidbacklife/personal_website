@@ -24,6 +24,7 @@ import { CuttleArenaComponent } from './portfolio/portfolio_pages/cuttle-overvie
 import { CuttleMLComponent } from './portfolio/portfolio_pages/cuttle-overview/cuttle-ml/cuttle-ml.component';
 import { HighlightedParagraphComponent } from './about/highlighted-paragraph/highlighted-paragraph.component';
 import { AboutSectionComponent } from './about/about-section/about-section.component';
+import { PortfolioNavComponent } from './portfolio/portfolio-nav/portfolio-nav.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AboutSectionComponent } from './about/about-section/about-section.compo
     CuttleArenaComponent,
     CuttleMLComponent,
     HighlightedParagraphComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    PortfolioNavComponent
   ],
   imports: [
     BrowserModule,
