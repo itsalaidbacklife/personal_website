@@ -44,3 +44,7 @@
     transform: translateX(0);
     opacity: 1;
 }
+
+.portfolio-nav-link.last {
+    margin-left: 8px;
+}
