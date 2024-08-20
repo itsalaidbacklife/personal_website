@@ -10,6 +10,7 @@ import { SurgeryDetailsComponent } from './portfolio/portfolio_pages/surgery-det
 import { EgiaComponent } from './portfolio/portfolio_pages/egia/egia.component';
 import { ProofCrafterComponent } from './portfolio/portfolio_pages/proof-crafter/proof-crafter.component';
 import { CuttleOverviewComponent } from './portfolio/portfolio_pages/cuttle-overview/cuttle-overview.component';
+import { AssistmentsComponent } from './portfolio/portfolio_pages/assistments/assistments.component';
 import { CuttleArenaComponent } from './portfolio/portfolio_pages/cuttle-overview/cuttle-arena/cuttle-arena.component';
 import { CuttleMLComponent } from './portfolio/portfolio_pages/cuttle-overview/cuttle-ml/cuttle-ml.component';
 
@@ -18,7 +19,7 @@ const routes: Routes = [
 	{ path: 'about', component: AboutComponent, data: {state: 'about'} },
 	{ path: 'portfolio', component: PortfolioComponent, data: {state: 'portfolio'}, children: [
 		{ path: '', redirectTo: 'assistments', pathMatch: 'full' },
-		{ path: 'assistments', component: ProofCrafterComponent },
+		{ path: 'assistments', component: AssistmentsComponent },
 		{ path: 'cuttle', component: CuttleOverviewComponent },
 	] },
 	{ path: 'contact', component: ContactComponent, data: {state: 'contact'} },

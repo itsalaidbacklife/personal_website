@@ -26,6 +26,7 @@ import { HighlightedParagraphComponent } from './about/highlighted-paragraph/hig
 import { AboutSectionComponent } from './about/about-section/about-section.component';
 import { PortfolioNavComponent } from './portfolio/portfolio-nav/portfolio-nav.component';
 import { SectionHeaderComponent } from './section-header/section-header.component';
+import { AssistmentsComponent } from './portfolio/portfolio_pages/assistments/assistments.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { SectionHeaderComponent } from './section-header/section-header.componen
     HighlightedParagraphComponent,
     AboutSectionComponent,
     PortfolioNavComponent,
-    SectionHeaderComponent
+    SectionHeaderComponent,
+    AssistmentsComponent
   ],
   imports: [
     BrowserModule,
