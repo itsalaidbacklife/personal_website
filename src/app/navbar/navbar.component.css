@@ -27,11 +27,18 @@
 	position: absolute;
 	display: block;
 	bottom: 0;
-	left: 0;
 	width: 0px;
 	height: 2px; /* Height of the border */
 	background-color: #11C7A9; /* Color of the border */
 	transition: width 0.5s ease; /* Smooth transition of width */
+}
+
+.nav-link.underline-from-left::after {
+	left: 0;
+}
+
+.nav-link.underline-from-right::after {
+	right: 0
 }
 
 a:visited, a:link {
