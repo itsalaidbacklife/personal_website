@@ -1,6 +1,7 @@
 #portfolio-nav {
     display: inline-block;
     position: relative;
+    margin: 24px 0px;
     padding: 12px;
     background-color: #27262D;
     border-radius: 16px;
