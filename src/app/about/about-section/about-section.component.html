@@ -1,14 +1,11 @@
 <section>
-  <div id="text-content">
-    <div class="text-column">
-      <h2>{{ title }}</h2>
-      <span>
-        {{ startDate }} - {{ endDate }} | {{ myRole }}
-      </span>
-    </div>
-    <p class="text-column text-md">
-      {{ description }}
-    </p>
-  </div>
+  <app-section-header
+    [title]="title"
+    [description]="description"
+    [startDate]="startDate"
+    [endDate]="endDate"
+    [myRole]="myRole"
+  >
+  </app-section-header>
   <img src="{{ imgSrc }}" alt="{{ imgAlt }}" class="image">
 </section>

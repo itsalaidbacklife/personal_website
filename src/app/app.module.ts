@@ -25,6 +25,7 @@ import { CuttleMLComponent } from './portfolio/portfolio_pages/cuttle-overview/c
 import { HighlightedParagraphComponent } from './about/highlighted-paragraph/highlighted-paragraph.component';
 import { AboutSectionComponent } from './about/about-section/about-section.component';
 import { PortfolioNavComponent } from './portfolio/portfolio-nav/portfolio-nav.component';
+import { SectionHeaderComponent } from './section-header/section-header.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { PortfolioNavComponent } from './portfolio/portfolio-nav/portfolio-nav.c
     CuttleMLComponent,
     HighlightedParagraphComponent,
     AboutSectionComponent,
-    PortfolioNavComponent
+    PortfolioNavComponent,
+    SectionHeaderComponent
   ],
   imports: [
     BrowserModule,

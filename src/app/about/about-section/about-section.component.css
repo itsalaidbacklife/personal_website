@@ -1,20 +1,3 @@
-#text-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin-top: 64px;
-}
-
-.text-column {
-  width: 50%;
-  margin: 0;
-}
-
-.text-column h2 {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
 .image {
   width: 100%;
   margin-top: 40px;
