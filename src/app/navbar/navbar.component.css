@@ -20,6 +20,7 @@
 	display: inline-block;
 	font-weight: bold;
 	margin-left: 8px;
+	transition: color .35s ease-in-out;
   }
 
 .nav-link::after {
