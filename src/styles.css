@@ -36,10 +36,15 @@ html {
 
 body {
   z-index: 0;
-  width: 100%;
+  width: auto;
+  max-width: 1920px;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+}
+
+#app-container {
+  box-sizing: border-box;
+  margin: 0px 128px 32px 128px;
+  will-change: transform;
 }
 
 h1 {
