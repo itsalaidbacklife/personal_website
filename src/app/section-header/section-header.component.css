@@ -1,8 +1,8 @@
-#text-content {
+.section-header {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .text-column {

@@ -9,13 +9,14 @@
 	position: relative;
 	width: 100%;
 	flex-direction: row;
-	align-items: center;
+	align-items: start;
 	justify-content: space-evenly;
 }
 	.rowWrapper h3 {
 		display: inline-block;
 		position: relative;
 		text-align: center;
+		margin-top: 0;
 		width: 35%;
 		order: 1;
 	}
