@@ -15,6 +15,10 @@
     transition: color .35s ease-in;
 }
 
+.portfolio-nav-link:not(.portfolio-nav-link.active-link):hover {
+    color: #11C7A9;
+}
+
 .portfolio-nav-link::after {
     content: '';
     display: block;
