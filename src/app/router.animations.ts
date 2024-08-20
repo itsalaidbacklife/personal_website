@@ -114,19 +114,24 @@ if (window.innerWidth <= 600) {
       // query('.entryWrapper', style({opacity: 0}), {optional: true}),
 
       /* 2 */ group([  // block executes in parallel
-        query(':enter #aboutContainer,  :enter #portfolioContainer', [
+        query(':enter #aboutContainer', [
           style({ transform: 'translateX(100%)' }),
           animate('0.5s ease-out', style({ transform: 'translateX(0px)', position: 'relative' }))
         ], { optional: true }),
 
-        query(':enter #contactContainer', [
-        	style({ transform: 'translateX(100%)' }),
-        	animate('.5s ease-out', style({ transform: 'translateX(0px)', position: 'relative'}))
+        query(':enter #portfolioContainer', [
+        	style({ transform: 'translateX(-100%)' }),
+        	animate('.75s ease-out', style({ transform: 'translateX(0px)', position: 'relative'}))
         	], {optional: true}),
 
-        query(':leave', [
+        query(':leave #portfolioContainer, :leave #cuttleContainer, :leave #assistmentsContainer', [
           style({ transform: 'translateX(0%)' }),
-          animate('0.5s ease-in-out', style({ transform: 'translateX(-100%)', position: 'fixed' }))
+          animate('0.5s ease-in-out', style({ transform: 'translateX(-150%)', position: 'relative' }))
+        ], { optional: true }),
+
+        query(':leave #aboutContainer', [
+          style({ transform: 'translateX(0%)' }),
+          animate('0.5s ease-in-out', style({ transform: 'translateX(150%)', position: 'relative' }))
         ], { optional: true }),
 
         query(':enter #dimensionalAnalysisContainer, :enter #cuttleOverviewContainer', [
