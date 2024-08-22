@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export type TextWithMetaData = {
   str: String;
-  highlighted: boolean;
+  route?: String;
 }
 
 @Component({

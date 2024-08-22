@@ -1,5 +1,10 @@
 <p>
-  <span *ngFor="let chunk of text" [ngClass]="{'highlighted': chunk.highlighted}">
-    {{ chunk.str }}
-  </span>
+  <ng-container *ngFor="let chunk of text">
+    <a *ngIf="chunk.route" [routerLink]="chunk.route" class="highlighted">
+      {{ chunk.str }}
+    </a>
+    <span *ngIf="!chunk.route">
+      {{ chunk.str }}
+    </span>
+  </ng-container>
 </p>
