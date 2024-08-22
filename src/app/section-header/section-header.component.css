@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: start;
   row-gap: 64px;
-  margin-bottom: 64px;
+  /* margin-bottom: 64px; */
 }
 
 .text-column {

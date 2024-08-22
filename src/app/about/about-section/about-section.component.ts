@@ -14,6 +14,7 @@ export class AboutSectionComponent implements OnInit {
   @Input() myRole: String;
   @Input() imgSrc: String;
   @Input() imgAlt: String;
+  @Input() customStyles: { [key: string]: string };
 
   constructor() { }
 

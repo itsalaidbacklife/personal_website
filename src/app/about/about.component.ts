@@ -25,6 +25,7 @@ export class AboutComponent implements OnInit {
 		{ str: " and I'm the creator and lead maintainer of the open source card battler" },
 		{ str: "cuttle.cards", route: '/portfolio/cuttle' },
 	];
+	childStyles: { [key: string]: string };
 
 	get smallScreen() {
 		return window.innerWidth < 600;
@@ -33,6 +34,7 @@ export class AboutComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
+		this.childStyles = {'margin-top': '128px'};
 	}
 
 }

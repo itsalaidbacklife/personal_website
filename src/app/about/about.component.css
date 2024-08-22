@@ -17,6 +17,10 @@
 	row-gap: 64px;
 }
 
+.about-section {
+	margin-top: 128px;
+}
+
 .article-column {
 	width: calc(50% - 64px);
 }
