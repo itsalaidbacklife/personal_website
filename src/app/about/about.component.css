@@ -13,10 +13,12 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
+	row-gap: 64px;
 }
 
 .article-column {
-	width: 50%;
+	width: calc(50% - 64px);
 }
 .about-img {
 	max-width: 200px;

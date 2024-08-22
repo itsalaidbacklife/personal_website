@@ -2,11 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+  row-gap: 64px;
   margin-bottom: 64px;
 }
 
 .text-column {
-  width: 50%;
+  width: calc(50% - 64px);
   margin: 0;
 }
 
