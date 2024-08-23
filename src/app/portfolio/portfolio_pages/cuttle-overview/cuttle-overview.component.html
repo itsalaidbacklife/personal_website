@@ -1,36 +1,27 @@
-<div id="cuttleOverviewContainer">
-	
-	<h2>Cuttle</h2>
-	<p id="summary">I want to share my favorite card game with the world by creating a platform for beginners to learn against AI before trying their luck against other players.</p>
+<article id="cuttleContainer">
+	<app-section-header
+		title="cuttle.cards"
+		startDate="2017"
+		endDate="Present"
+		myRole="Creator and Lead Maintainer"
+		description="Cuttle is the oldest battle card game, and it’s played with a regular 52-card deck. I built cuttle.cards to empower people to play my favorite game online, and to create a space for technical professionals to develop their skills by contributing to an open source project that’s actively used by real people."
+	>
+	</app-section-header>
 
-	<div id="projectRow">
-		<div class="projectEntry" id="entry0">
-			<h3>CuttleBot</h3>
-			<div class="imgWrapper">
-				<img src="./assets/cuttle bot.PNG">
-				<a routerLink="/cuttleBot"></a>
-			</div>
-			<p>Teaching beginners with Educational AI using mixed-initiative feedback & move-reversibility</p>
-			<p>Built in Angular 6</p>
-		</div>
-		<div class="projectEntry" id="entry1">
-			<h3>CuttleML</h3>
-			<div class="imgWrapper">
-				<img src="./assets/cuttle ml.PNG">
-				<a routerLink="/cuttleML"></a>
-			</div>
-			<p>Improving CuttleBot's decision making with cutting-edge machine learning techniques</p>
-			<p>Built in python with pandas and sklearn</p>
-		</div>
-		<div class="projectEntry" id="entry2">
-			<h3>CuttleArena</h3>
-			<div class="imgWrapper">
-				<img src="./assets/cuttle arena.PNG">
-				<a routerLink="/cuttleArena"></a>
-			</div>
-			<p>Connecting advanced players around the world with full-stack web-development</p>
-			<p>Built in node.js with sails.js and AngularJS</p>
-		</div>
+	<app-picture-and-explanation
+		title="Architecture"
+		img="portfolio/cuttle/three-dialog"
+		text="cuttle.cards is an open source, real-time, full stack web app, built with a nodejs backend using the sailsjs framework, a Vue 3 SPA using the Vuetify component library, and a postgresql database. It’s tested end to end with cypress, and unit tested with vitest. You can check out the code here. It has all the essential bells and whistles of full stack web development at a Goldilocks level of complexity that is ideal for learning how to make robust web apps in an authentic environment with a real user base."
+		link="https://cuttle.cards/rules"
+	>
+	</app-picture-and-explanation>
 
-	</div> <!-- End project row -->
-</div> <!-- End #cuttleOverviewContainer -->
+	<app-picture-and-explanation
+		title="Learn By Doing"
+		img="portfolio/cuttle/Cuttle with Cypress"
+		text="Since its inception, I have used my work on cuttle.cards to drive targeted skill development that aligns with my career goals. As the project matured and my own trajectory brought me to leading teams of software engineers, I’ve made it my mission to use Cuttle as a medium through which to teach technical skills to anyone in learning them."
+		text2="Cuttle is simple enough to be accessible at any level of development, and deep enough to enable learners to cultivate programming skills in any layer of the full stack. The issue backlog is labeled and curated with improvements to user and developer experience in different areas and spanning various levels of complexity, and the core team works with contributors to help them find and complete progressively more complex and valuable contributions that align their skills and interests"
+		link="https://cuttle.cards/rules"
+	>
+	</app-picture-and-explanation>
+</article>

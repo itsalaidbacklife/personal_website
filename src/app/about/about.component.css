@@ -1,101 +1,75 @@
 /*All Screens*/
-h2 {
-	text-align: center;
-}
+
 #aboutContainer {
-	height: 500px;
 	width: 100%;
 	position: relative;
-	/*left: 5%;*/
-}
-	#skillLabel {
-		text-align: left;
-		font-size: 16pt;
-	}
-
-	mat-slide-toggle label .mat-slide-toggle-bar-no-side-margin {
-		background-color: rgba(176,190,197,.54) !important;
-	}
-
-	h3 {
-		font-weight: bold;
-	}
-	span {
-		font-family: "PT Mono" !important;
-		color: #DB2A33;
-	  /*color: #ff4081;*/
-	}
-div p a {
-	margin:	0px;
+	box-sizing: border-box;
 }
 
+.h1 {
+	margin-top: 0;
+}
+.article {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	row-gap: 64px;
+	flex-wrap: wrap;
+}
 
-/*Large Screens only*/
-@media screen and (min-width: 1000px) {
-	#aboutContainer {
-		display: flex;
-		flex-direction: row;
-		/*align-items: center;*/
-		justify-content: space-evenly;
-	}
-	#spiel {
-		display: inline-block;
-		/*margin-left: 4%;*/
-		position: relative;
-		text-align: left;
-		width: 33%;
-		font-size: 1.25em;
-		order: 1;
-	}
-	#skills {
-		display: inline-block;
-		order: 2;
-		/*position: relative;*/
-		/*position: absolute;*/
-		/*left: 48%;*/
-		/*margin-left: 12%;*/
-		width: 31%;
-		font-weight: bold;
-	}
-	#logo {
-		width: 30%;
-		border-radius: 3%;
-		position: relative;
-	}
+.about-section {
+	margin-top: 128px;
+}
+
+.article-column {
+	width: calc(50% - 64px);
+	min-width: 355px;
+	flex-grow: 1;
+}
+.about-img {
+	max-width: 200px;
+}
+
+#intro-paragraph {
+	font-family: 'IBM Plex Mono';
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.link {
+	font-family: 'IBM Plex Mono';
+	font-size: 20px;
+	line-height: 24px;
+	color: #11C7A9;
+}
+
+.section {
+	display: block;
+}
+
+#contact-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 64px;
+}
+
+#contact-heading {
+	margin-top: 0px;
+}
+
+.social-link {
+	margin-left: 16px;
+}
+
+.social-logo {
+	width: 40px;
 }
 
 /*Small screens only*/
 @media screen and (max-width: 1000px) {
 	#aboutContainer {
 		left: 0px;
-	}
-	#spiel {
-		display: block;
-		position: relative;
-		width: 70%;
-		margin-left: 15%;
-		margin-right: 15%;
-		margin-top: 5%;
-		text-align: left;
-		font-size: 15pt;
-	}
-	#logo {
-		width: 80%;
-		border-radius: 3%;
-		position: relative;
-	}
-	#skills {
-		display: block;
-		position: relative;
-		width: 70%;
-		font-weight: bold;
-		/*border: 2px solid white;*/
-		margin-left: 15%;
-		margin-right: 15%;
-		margin-top: 10%;
-		margin-bottom: 10%;
-	}
-	#skillLabel {
-		font-size: 1.25em;
 	}
 }

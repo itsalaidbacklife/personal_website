@@ -1,7 +1,8 @@
-<nav>
-	<a routerLink="/about" routerLinkActive="activeLink">About</a>
-	<a routerLink="/portfolio" routerLinkActive="activeLink">Portfolio</a>
-	<!-- <a routerLink="/otherWork" routerLinkActive="activeLink">Other Work</a> -->
-	<a href="/assets/Emberling Resume.pdf" target="_blank" *ngIf="screenWidth > 1000">Resume</a>
-	<a routerLink="/contact" routerLinkActive="activeLink">Contact</a>
+<nav id="top-nav">
+	<h3 id="nav-logo" *ngIf="screenIsNotSmall">Ryan Emberling</h3>
+	<span id="nav-links">
+		<a routerLink="/about" routerLinkActive="activeLink" class="nav-link underline-from-right">About</a>
+		<a routerLink="/portfolio" routerLinkActive="activeLink" class="nav-link underline-from-left">Portfolio</a>
+		<a href="/assets/Emberling Resume.pdf" target="_blank" class="nav-link">Resume</a>
+	</span>
 </nav>

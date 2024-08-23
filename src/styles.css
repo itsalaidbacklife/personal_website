@@ -1,127 +1,84 @@
-* {
-  /*font-family: "EB Garamond", Garamond, serif !important;*/
-  font-family: "Open Sans", sans-serif !important;
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/assets/fonts/IBMPlexSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/assets/fonts/IBMPlexSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/assets/fonts/IBMPlexMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html, body, app-root {
+  font-family: "IBM Plex Sans", sans-serif;
   height: 100%;
 }
 
-h1 {
-  /*color: #369;*/
-  /*color: #E5E5E5;*/
-  color: #000;
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  font-size: 250%;
-}
-
-.fixedHeader {
-  color: rgb(47, 84, 150) !important;
-}
-
-h2, h3 {
-  /*color: #444;*/
-  /*color: #E5E5E5;*/
-  /*color: #000;*/
-  color: #DB2A33;
-  /*color: #FFF;*/
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  font-weight: lighter;
-  font-family: 'Lato', sans-serif !important;
-  font-family: "PT Mono" !important;
-  /*font-family: Bookman Old Style, sans-serif !important;*/
-  /*font-size: 100%;*/
-}
-h3 {
-  font-size: 1.5em;
-}
-#header {
-  text-align: center;
-  font-family: 'Lato', sans-serif !important;
-  margin-bottom: 0%;
-  font-size: 4em;
-  /*color: #FF2300;*/
-  /*color: #FF9A00;*/
-  /*color: #41FF00;*/
-  color: rgb(47, 84, 150);
-}
-#subheader {
-  text-align: center;
-  font-family: 'Lato', sans-serif !important;
-  font-size: 2.5em;
-  margin-top: .25%;
-  margin-bottom: 1.5%;
-  /*color: #FF2300;*/
-  /*color: #FF9A00;*/
-  /*color: #41FF00;*/
-  color: rgb(47, 84, 150);
-}
-a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-  font-weight: bold;
-  /*background-color: #eee;*/
-  /*border-radius: 4px;*/
-}
-a:visited, a:link {
-  color: #607D8B;
-}
-a:hover {
-  color: #039be5 !important;
-  background-color: #CFD8DC;
-}
-/*a.active {
-  color: #039be5;
-}*/
-.activeLink {
-  color: #222222 !important;
-  background-color: #CFD8DC;
-}
-
 html {
-  /*color: #E5E5E5;*/
-  color: #000;
-  /*color: #FFF;*/
+  color: #FFF;
   background-repeat: no-repeat;
-  background-color: #FCFCFC;
-  /*background-color: #000;*/
-  /*background-color: #0E0826;*/
+  background-color: #000;
   z-index: -1;
   padding: none;
   margin: none;
 }
 
-img {
-  border: 2px solid #000;
-  box-sizing: border-box; /* Include border in width calculation */
-}
-
 body {
   z-index: 0;
-  width: 100%;
+  width: auto;
+  max-width: 1920px;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
 }
 
-mat-slide-toggle label .mat-slide-toggle-bar-no-side-margin {
-  background-color: rgba(176,190,197,.54) !important;
+#app-container {
+  box-sizing: border-box;
+  margin: 0px 128px 32px 128px;
+  will-change: transform;
 }
-/*Small Screens only*/
-@media screen and (max-width: 600px) {
-  #header {
-    font-size: 2.15em;
-  }
-  #subheader {
-    font-size: 1.75em;
-    margin-bottom: 5%;
-  }
-  h2 {
-    font-size: 1.25em;
-  }
+
+h1 {
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: bold;
 }
-html, body { height: 100%; }
-body { margin: 0; }
-/*body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif !important; }*/
+
+h2 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.text-md {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  #app-container {
+    margin: 0px 32px 32px 32px;
+  } 
+}

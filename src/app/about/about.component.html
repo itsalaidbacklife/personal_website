@@ -1,44 +1,66 @@
 <div id="aboutContainer">
-	<div id="spiel">
-		<!-- <h3 id="spielLabel">Me</h3> -->
-		<!-- <img id="logo" src="./assets/RyanTattoo_v03.jpg"> -->
-		<p>I am deeply passionate about education. In the next ten years, web technologies will revolutionize classrooms by elevating educational platforms from digitized textbooks to interactive educational experiences that guide students with custom feedback and presentation of the material tailored to their needs. 
+  <!-- Intro Paragraph -->
+  <article class="article">
+    <div class="article-column">
+      <h1 class="h1">
+        Ryan
+        <br />
+        Emberling
+      </h1>
+      <img
+        src="../../assets/ryan_emberling_illustrated_portrait.png"
+        alt="Illustrated portrait of Ryan Emberling, bearded, smiling, with wavy brown hair"
+        class="about-img"
+      />
+    </div>
+    <div id="intro-paragraph" class="article-column">
+      <p>I lead teams, make software, and mentor technical professionals.</p>
+      <app-highlighted-paragraph [text]="introText"></app-highlighted-paragraph>
+    </div>
+  </article>
 
-			<br> <br>
-			My ambition to take part in restructuring technology's role in the classroom has led me to study at Carnegie Mellon's Masters in Educational Technology and Applied Learning Science (METALS) program, where I'm enrolled as a full-time student.
-			<!-- <a routerLink="/contact">Let's change the game.</a>  -->
-		</p>
-	</div>
-		
-	<!-- Skill list -->
-	<div id="skills" [@.disabled]="smallScreen">
-		<h3 id="skillLabel">
-			<span>
-				Development
-			</span>
-			<mat-slide-toggle (click)="skillIndex = (skillIndex + 1) % 2"  style="background-color: background-color: rgba(176,190,197,.54)"></mat-slide-toggle>
-			<span class="learningLabel">
-				{{learningLabel}}
-			</span>
-		</h3>
-		<!-- Technical Skills -->
-		<app-skillbar [skill]="'HTML'" [width]="'94.25%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Javascript'" [width]="'90%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'python'" [width]="'90%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'sails.js'" [width]="'85%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>	
-		<app-skillbar [skill]="'node.js'" [width]="'80%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'angular'" [width]="'75%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'CSS'" [width]="'65%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'sklearn'" [width]="'60%'" *ngIf="skillSet=='Technical Skills'" [on]="skillSet=='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
+  <app-about-section
+    title="ASSISTments"
+    description="An ed tech nonprofit that empowers math educators with data-driven formative assessment toolsAn ed tech nonprofit that empowers math educators with data-driven formative assessment tools"
+    startDate="2018"
+    endDate="Present"
+    myRole="Director of Engineering"
+    imgSrc="../../assets/about/ASSISTments Workbench Drag and Drop.png"
+    imgAlt="Image of the ASSISTments Student experience, showing a math problem where students must drag and drop numbers to identify which numbers are even and odd."
+    route="/portfolio/assistments"
+    [customStyles]="childStyles"
+  >
+  </app-about-section>
 
-		<!-- Learning Science Skills -->
-		<app-skillbar [skill]="'Instructional Design'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Domain: Math'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>	
-		<app-skillbar [skill]="'Domain: Computer Science'" [width]="'94.25%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Intelligent Tutor Design'" [width]="'90%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Educational Data Science'" [width]="'85%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Cognitive Task Analysis'" [width]="'70%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-		<app-skillbar [skill]="'Educational AI'" [width]="'70%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>		
-		<app-skillbar [skill]="'Games for Learning'" [width]="'65%'" *ngIf="skillSet=='Learning Science Skills'" [on]="skillSet!='Technical Skills'" [@myInsertRemoveTrigger]></app-skillbar>
-	</div>
+  <app-about-section
+    title="cuttle.cards"
+    description="An online platform empowering people to play the oldest known battle card game online. All the thrills of games like Magic, Yugioh, or Hearthstone, played for free, with a standard deck of cards."
+    startDate="2017"
+    endDate="Present"
+    myRole="Creator & Lead Maintainer"
+    imgSrc="../../assets/about/Opponent May Counter.png"
+    imgAlt="Image of the card game Cuttle played online, showing a stack of cards with the words 'Opponent May Counter'"
+    route="/portfolio/cuttle"
+    [customStyles]="childStyles"
+  >
+  </app-about-section>
+
+  <!-- Contact -->
+  <section id="contact-section">
+    <div>
+      <h2 id="contact-heading">Contact</h2>
+      <h3>Ryan Emberling</h3>
+      <a href="mailto: ryan.emberling@gmail.com" class="link" id="email">
+        ryan.emberling@gmail.com
+      </a>
+    </div>
+    <div>
+      <a href="https://github.com/itsalaidbacklife" class="social-link" target="_blank">
+        <img src="../../assets/about/GitHub.svg" alt="Logo for github with link to Ryan's github profile" class="social-logo">
+      </a>
+      <a href="https://www.linkedin.com/in/ryan-emberling/" class="social-link" target="_blank">
+        <img src="../../assets/about/LinkedIn.svg" alt="Logo for LinkedIn with link to Ryan's LinkedIn profile" class="social-logo">
+      </a>
+    </div>
+  </section>
 </div>

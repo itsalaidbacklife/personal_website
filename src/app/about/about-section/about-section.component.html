@@ -1,0 +1,13 @@
+<section class="about-section" [ngStyle]="customStyles">
+  <app-section-header
+    [title]="title"
+    [description]="description"
+    [startDate]="startDate"
+    [endDate]="endDate"
+    [myRole]="myRole"
+  >
+  </app-section-header>
+  <a [routerLink]="route">
+    <img src="{{ imgSrc }}" alt="{{ imgAlt }}" class="image">
+  </a>
+</section>
