@@ -7,5 +7,7 @@
     [myRole]="myRole"
   >
   </app-section-header>
-  <img src="{{ imgSrc }}" alt="{{ imgAlt }}" class="image">
+  <a [routerLink]="route">
+    <img src="{{ imgSrc }}" alt="{{ imgAlt }}" class="image">
+  </a>
 </section>
