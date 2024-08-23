@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit {
 	get screenIsNotSmall() {
 		return this.screenWidth >= 600;
 	}
+
 	constructor() { }
 
 	ngOnInit() {
