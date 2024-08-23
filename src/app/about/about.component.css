@@ -15,6 +15,7 @@
 	align-items: center;
 	justify-content: space-between;
 	row-gap: 64px;
+	flex-wrap: wrap;
 }
 
 .about-section {
@@ -23,6 +24,8 @@
 
 .article-column {
 	width: calc(50% - 64px);
+	min-width: 355px;
+	flex-grow: 1;
 }
 .about-img {
 	max-width: 200px;
