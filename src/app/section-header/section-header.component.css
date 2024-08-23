@@ -3,15 +3,24 @@
   justify-content: space-between;
   align-items: start;
   row-gap: 64px;
+  flex-wrap: wrap;
   /* margin-bottom: 64px; */
 }
 
 .text-column {
-  width: calc(50% - 64px);
+  width: calc(50% - 32px);
   margin: 0;
+  min-width: 355px;
+  flex-grow: 1;
 }
 
 .text-column h2 {
   margin-top: 0;
   margin-bottom: 8px;
+}
+
+@media (max-width: 1000px) {
+  .section-header {
+    row-gap: 8px;
+  }
 }
