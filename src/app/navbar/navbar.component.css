@@ -43,10 +43,10 @@
 }
 
 a:visited, a:link {
-color: #FFFFFF;
+	color: #FFFFFF;
 }
 a:hover {
-color: #11C7A9 !important;
+	color: #11C7A9 !important;
 }
 .activeLink::after {
 	width: 100%;
