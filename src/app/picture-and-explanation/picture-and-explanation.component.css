@@ -87,12 +87,12 @@
 /*Small screens only*/
 @media screen and (max-width: 1000px) {
 	.rowWrapper {
-		display: block;
+		flex-direction: column;
+		row-gap: 16px;
 	}
 	.imgWrapper, .textWrapper {
 		display: block !important;
-		width: 60% !important;
-		margin-left: 20%;
+		width: 100%;
 	}
 	.titleWrapper, .footer {
 		/*width: 100%;*/

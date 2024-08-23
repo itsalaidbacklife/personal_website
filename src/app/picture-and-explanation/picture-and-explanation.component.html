@@ -2,16 +2,14 @@
 	<div class="rowWrapper">
 		<!-- Optional image on the left -->
 		<div class="imgWrapper" *ngIf="img">
-				<img src="./assets/{{img}}.PNG">
-				<a href="{{link}}" target="_blank" *ngIf="link" class="imageLink"></a>
+			<h3 *ngIf="title && screenIsSmall" class="title">{{title}}</h3>
+			<img src="./assets/{{img}}.PNG">
+			<a href="{{link}}" target="_blank" *ngIf="link" class="imageLink"></a>
 		</div>
-
-		<!-- Small Screen footer -->
-		<p *ngIf="screenIsSmall" class="smallScreenFooter">{{smallScreenCaption}} <a *ngIf="link" href="{{link}}">click here</a> </p>
 
 		<!-- Optional text on the right (up to 2 paragraphs) -->
 		<div class="textWrapper" *ngIf="text">
-			<h3 *ngIf="title" class="title">{{title}}</h3>
+			<h3 *ngIf="title && !screenIsSmall" class="title">{{title}}</h3>
 			<p class="paragraphText">{{text}}</p>
 			<p class="paragraphText" *ngIf="text2">{{text2}}</p>
 		</div>
