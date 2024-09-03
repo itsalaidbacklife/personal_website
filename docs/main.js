@@ -170,7 +170,7 @@ var AboutComponent = /** @class */ (function () {
         this.introText = [
             { str: "I'm Currently the Director of Engineering at the" },
             { str: "ASSISTments Foundation,", route: '/portfolio/assistments' },
-            { str: " and I'm the creator and lead maintainer of the open source card battler" },
+            { str: "and I'm the creator and lead maintainer of the open source card battler" },
             { str: "cuttle.cards", route: '/portfolio/cuttle' },
         ];
     }
