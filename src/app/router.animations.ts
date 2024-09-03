@@ -11,23 +11,23 @@ const responsiveRouterTransition = trigger('routerTransition', [
 
     /* 2 */ group([  // block executes in parallel
       query(':enter #aboutContainer', [
-        style({ transform: 'translateX(100%)' }),
+        style({ transform: 'translateX(-100%)' }),
         animate('0.5s ease-out', style({ transform: 'translateX(0px)', position: 'relative' }))
       ], { optional: true }),
 
       query(':enter #portfolioContainer', [
-        style({ transform: 'translateX(-100%)' }),
+        style({ transform: 'translateX(100%)' }),
         animate('.75s ease-out', style({ transform: 'translateX(0px)', position: 'relative'}))
         ], {optional: true}),
 
       query(':leave #portfolioContainer, :leave #cuttleContainer, :leave #assistmentsContainer', [
         style({ transform: 'translateX(0%)' }),
-        animate('0.5s ease-in-out', style({ transform: 'translateX(-150%)', position: 'relative' }))
+        animate('0.5s ease-in-out', style({ transform: 'translateX(150%)', position: 'relative' }))
       ], { optional: true }),
 
       query(':leave #aboutContainer', [
         style({ transform: 'translateX(0%)' }),
-        animate('0.5s ease-in-out', style({ transform: 'translateX(150%)', position: 'relative' }))
+        animate('0.5s ease-in-out', style({ transform: 'translateX(-150%)', position: 'relative' }))
       ], { optional: true }),
 
       query(':enter #cuttleOverviewContainer', [
