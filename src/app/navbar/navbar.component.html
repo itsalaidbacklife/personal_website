@@ -1,5 +1,12 @@
 <nav id="top-nav">
-	<h3 id="nav-logo" *ngIf="screenIsNotSmall">Ryan Emberling</h3>
+	<h3 id="nav-logo" *ngIf="screenIsNotSmall">
+		<img
+			id="nav-logo-img"
+			src="/assets/logos/logo black_on_green 256x256.png"
+			alt="emberling.education logo: letter E"
+		>
+		emberling.education
+	</h3>
 	<span id="nav-links">
 		<a routerLink="/about" routerLinkActive="activeLink" class="nav-link underline-from-right">About</a>
 		<a routerLink="/portfolio" routerLinkActive="activeLink" class="nav-link underline-from-left">Portfolio</a>
