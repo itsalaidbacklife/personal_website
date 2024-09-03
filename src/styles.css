@@ -78,8 +78,15 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   #app-container {
     margin: 0px 32px 32px 32px;
   } 
+}
+
+@media (max-width: 1000px) {
+  .h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
 }

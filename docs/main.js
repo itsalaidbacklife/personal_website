@@ -129,7 +129,7 @@ var AboutSectionComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/*All Screens*/\n\n#aboutContainer {\n\twidth: 100%;\n\tposition: relative;\n\tbox-sizing: border-box;\n}\n\n.h1 {\n\tmargin-top: 0;\n}\n\n.article {\n\tdisplay: flex;\n\tflex-direction: row;\n\talign-items: center;\n\tjustify-content: space-between;\n\trow-gap: 64px;\n\tflex-wrap: wrap;\n}\n\n.about-section {\n\tmargin-top: 128px;\n}\n\n.article-column {\n\twidth: calc(50% - 64px);\n\tmin-width: 355px;\n\tflex-grow: 1;\n}\n\n.about-img {\n\tmax-width: 200px;\n}\n\n#intro-paragraph {\n\tfont-family: 'IBM Plex Mono';\n\tfont-size: 24px;\n\tline-height: 32px;\n}\n\n.link {\n\tfont-family: 'IBM Plex Mono';\n\tfont-size: 20px;\n\tline-height: 24px;\n\tcolor: #11C7A9;\n}\n\n.section {\n\tdisplay: block;\n}\n\n#contact-section {\n\tdisplay: flex;\n\tjustify-content: space-between;\n\talign-items: center;\n\tmargin-top: 64px;\n}\n\n#contact-heading {\n\tmargin-top: 0px;\n}\n\n.social-link {\n\tmargin-left: 16px;\n}\n\n.social-logo {\n\twidth: 40px;\n}\n\n/*Small screens only*/\n\n@media screen and (max-width: 1000px) {\n\t#aboutContainer {\n\t\tleft: 0px;\n\t}\n}\n"
+module.exports = "/*All Screens*/\n\n#aboutContainer {\n\twidth: 100%;\n\tposition: relative;\n\tbox-sizing: border-box;\n}\n\n.h1 {\n\tmargin-top: 0;\n}\n\n.article {\n\tdisplay: flex;\n\tflex-direction: row;\n\talign-items: center;\n\tjustify-content: space-between;\n\trow-gap: 64px;\n\tflex-wrap: wrap;\n}\n\n.about-section {\n\tmargin-top: 128px;\n}\n\n.article-column {\n\twidth: calc(50% - 64px);\n\tmin-width: 340px;\n\tflex-grow: 1;\n}\n\n.about-img {\n\tmax-width: 200px;\n}\n\n#intro-paragraph {\n\tfont-family: 'IBM Plex Mono';\n\tfont-size: 24px;\n\tline-height: 32px;\n}\n\n.link {\n\tfont-family: 'IBM Plex Mono';\n\tfont-size: 20px;\n\tline-height: 24px;\n\tcolor: #11C7A9;\n}\n\n.section {\n\tdisplay: block;\n}\n\n#contact-section {\n\tdisplay: flex;\n\tjustify-content: space-between;\n\talign-items: center;\n\tmargin-top: 64px;\n}\n\n#contact-heading {\n\tmargin-top: 0px;\n}\n\n.social-link {\n\tmargin-left: 16px;\n}\n\n.social-logo {\n\twidth: 40px;\n}\n\n/*Small screens only*/\n\n@media screen and (max-width: 1000px) {\n\t#aboutContainer {\n\t\tleft: 0px;\n\t}\n}\n"
 
 /***/ }),
 
@@ -962,20 +962,20 @@ var responsiveRouterTransition = Object(_angular_animations__WEBPACK_IMPORTED_MO
         // query('.entryWrapper', style({opacity: 0}), {optional: true}),
         /* 2 */ Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["group"])([
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter #aboutContainer', [
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(100%)' }),
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('0.5s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(0px)', position: 'relative' }))
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(-100%)' }),
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('0.65s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(0px)', position: 'relative' }))
             ], { optional: true }),
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter #portfolioContainer', [
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(-100%)' }),
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('.75s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(0px)', position: 'relative' }))
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(100%)' }),
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('.65s ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(0px)', position: 'relative' }))
             ], { optional: true }),
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave #portfolioContainer, :leave #cuttleContainer, :leave #assistmentsContainer', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(0%)' }),
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('0.5s ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(-150%)', position: 'relative' }))
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('0.5s ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(175%)', position: 'relative' }))
             ], { optional: true }),
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':leave #aboutContainer', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(0%)' }),
-                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('0.5s ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(150%)', position: 'relative' }))
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["animate"])('0.5s ease-in-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateX(-175%)', position: 'relative' }))
             ], { optional: true }),
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["query"])(':enter #cuttleOverviewContainer', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_0__["style"])({ transform: 'translateY(110%)' }),
@@ -996,7 +996,7 @@ var routerTransition = responsiveRouterTransition;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".section-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: start;\n  row-gap: 64px;\n  flex-wrap: wrap;\n  /* margin-bottom: 64px; */\n}\n\n.text-column {\n  width: calc(50% - 32px);\n  margin: 0;\n  min-width: 355px;\n  flex-grow: 1;\n}\n\n.text-column h2 {\n  margin-top: 0;\n  margin-bottom: 8px;\n}\n\n@media (max-width: 1000px) {\n  .section-header {\n    row-gap: 8px;\n  }\n}"
+module.exports = ".section-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: start;\n  row-gap: 64px;\n  flex-wrap: wrap;\n  /* margin-bottom: 64px; */\n}\n\n.text-column {\n  width: calc(50% - 32px);\n  margin: 0;\n  min-width: 340px;\n  flex-grow: 1;\n}\n\n.text-column h2 {\n  margin-top: 0;\n  margin-bottom: 8px;\n}\n\n@media (max-width: 1000px) {\n  .section-header {\n    row-gap: 8px;\n  }\n}"
 
 /***/ }),
 
