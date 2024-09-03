@@ -24,7 +24,7 @@
 
 .article-column {
 	width: calc(50% - 64px);
-	min-width: 355px;
+	min-width: 340px;
 	flex-grow: 1;
 }
 .about-img {
