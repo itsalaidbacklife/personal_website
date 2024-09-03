@@ -3,7 +3,10 @@
     <a *ngIf="chunk.route" [routerLink]="chunk.route" class="highlighted">
       {{ chunk.str }}
     </a>
-    <span *ngIf="!chunk.route">
+    <a *ngIf="chunk.url" [href]="chunk.url" target="_blank" class="highlighted">
+      {{ chunk.str }}
+    </a>
+    <span *ngIf="!chunk.route && !chunk.url">
       {{ chunk.str }}
     </span>
   </ng-container>
