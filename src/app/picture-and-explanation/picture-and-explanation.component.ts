@@ -37,6 +37,16 @@ export class PictureAndExplanationComponent implements OnInit {
 		return this.text;
 	}
 
+	get paragraph2(): TextWithMetaData[] | undefined {
+		if (!this.text2) {
+			return undefined;
+		}
+		if (typeof this.text2 === 'string') {
+			return [{str: this.text2}];
+		}
+		return this.text2;
+	}
+
 	constructor() { }
 	ngOnInit() {
 	}
