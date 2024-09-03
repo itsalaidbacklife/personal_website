@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
 	introText: Array<TextWithMetaData> = [
 		{ str: "I'm Currently the Director of Engineering at the"},
 		{ str: "ASSISTments Foundation,", route: '/portfolio/assistments' },
-		{ str: " and I'm the creator and lead maintainer of the open source card battler" },
+		{ str: "and I'm the creator and lead maintainer of the open source card battler" },
 		{ str: "cuttle.cards", route: '/portfolio/cuttle' },
 	];
 	childStyles: { [key: string]: string };
