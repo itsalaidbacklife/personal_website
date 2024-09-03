@@ -7,6 +7,14 @@
 
 #nav-logo {
 	margin: 0px;
+	display: flex;
+	justify-content: space space-between;
+}
+
+#nav-logo-img {
+	position: relative;
+	width: 32px;
+	margin-right: 8px;
 }
 
 #nav-links {
