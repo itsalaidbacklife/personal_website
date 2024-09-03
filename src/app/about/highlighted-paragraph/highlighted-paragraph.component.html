@@ -1,9 +1,9 @@
 <p>
   <ng-container *ngFor="let chunk of text">
-    <a *ngIf="chunk.route" [routerLink]="chunk.route" class="highlighted">
+    <a *ngIf="chunk.route" [routerLink]="chunk.route" class="link">
       {{ chunk.str }}
     </a>
-    <a *ngIf="chunk.url" [href]="chunk.url" target="_blank" class="highlighted">
+    <a *ngIf="chunk.url" [href]="chunk.url" target="_blank" class="link">
       {{ chunk.str }}
     </a>
     <span *ngIf="!chunk.route && !chunk.url">

@@ -76,6 +76,23 @@ h3 {
 
 a {
   text-decoration: none;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Height of the border */
+  background-color: #11C7A9; /* Color of the border */
+  transition: width 0.5s ease; /* Smooth transition of width */
+  left: 0;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 860px) {
