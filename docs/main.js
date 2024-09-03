@@ -478,7 +478,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#top-nav {\n\tdisplay: flex;\n\tjustify-content: space-between;\n\talign-items: center;\n\tpadding: 48px 0px;\n}\n\n#nav-logo {\n\tmargin: 0px;\n}\n\n#nav-links {\n\tmargin-right: 32px;\n}\n\n.nav-link {\n\tposition: relative;\n\tpadding: 5px 10px;\n\ttext-decoration: none;\n\tdisplay: inline-block;\n\tfont-weight: bold;\n\tmargin-left: 8px;\n\ttransition: color .35s ease-in;\n  }\n\n.nav-link::after {\n\tcontent: '';\n\tposition: absolute;\n\tdisplay: block;\n\tbottom: 0;\n\twidth: 0px;\n\theight: 2px; /* Height of the border */\n\tbackground-color: #11C7A9; /* Color of the border */\n\ttransition: width 0.5s ease; /* Smooth transition of width */\n}\n\n.nav-link.underline-from-left::after {\n\tleft: 0;\n}\n\n.nav-link.underline-from-right::after {\n\tright: 0\n}\n\na:visited, a:link {\n\tcolor: #FFFFFF;\n}\n\na:hover {\n\tcolor: #11C7A9 !important;\n}\n\n.activeLink::after {\n\twidth: 100%;\n}\n"
+module.exports = "#top-nav {\n\tdisplay: flex;\n\tjustify-content: space-between;\n\talign-items: center;\n\tpadding: 48px 0px;\n}\n\n#nav-logo {\n\tmargin: 0px;\n\tdisplay: flex;\n\tjustify-content: space space-between;\n}\n\n#nav-logo-img {\n\tposition: relative;\n\twidth: 32px;\n\tmargin-right: 8px;\n}\n\n#nav-links {\n\tmargin-right: 32px;\n}\n\n.nav-link {\n\tposition: relative;\n\tpadding: 5px 10px;\n\ttext-decoration: none;\n\tdisplay: inline-block;\n\tfont-weight: bold;\n\tmargin-left: 8px;\n\ttransition: color .35s ease-in;\n  }\n\n.nav-link::after {\n\tcontent: '';\n\tposition: absolute;\n\tdisplay: block;\n\tbottom: 0;\n\twidth: 0px;\n\theight: 2px; /* Height of the border */\n\tbackground-color: #11C7A9; /* Color of the border */\n\ttransition: width 0.5s ease; /* Smooth transition of width */\n}\n\n.nav-link.underline-from-left::after {\n\tleft: 0;\n}\n\n.nav-link.underline-from-right::after {\n\tright: 0\n}\n\na:visited, a:link {\n\tcolor: #FFFFFF;\n}\n\na:hover {\n\tcolor: #11C7A9 !important;\n}\n\n.activeLink::after {\n\twidth: 100%;\n}\n"
 
 /***/ }),
 
@@ -489,7 +489,7 @@ module.exports = "#top-nav {\n\tdisplay: flex;\n\tjustify-content: space-between
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav id=\"top-nav\">\n\t<h3 id=\"nav-logo\" *ngIf=\"screenIsNotSmall\">Ryan Emberling</h3>\n\t<span id=\"nav-links\">\n\t\t<a routerLink=\"/about\" routerLinkActive=\"activeLink\" class=\"nav-link underline-from-right\">About</a>\n\t\t<a routerLink=\"/portfolio\" routerLinkActive=\"activeLink\" class=\"nav-link underline-from-left\">Portfolio</a>\n\t\t<a href=\"/assets/Emberling Resume.pdf\" target=\"_blank\" class=\"nav-link\">Resume</a>\n\t</span>\n</nav>"
+module.exports = "<nav id=\"top-nav\">\n\t<h3 id=\"nav-logo\" *ngIf=\"screenIsNotSmall\">\n\t\t<img\n\t\t\tid=\"nav-logo-img\"\n\t\t\tsrc=\"/assets/logos/logo black_on_green 256x256.png\"\n\t\t\talt=\"emberling.education logo: letter E\"\n\t\t>\n\t\temberling.education\n\t</h3>\n\t<span id=\"nav-links\">\n\t\t<a routerLink=\"/about\" routerLinkActive=\"activeLink\" class=\"nav-link underline-from-right\">About</a>\n\t\t<a routerLink=\"/portfolio\" routerLinkActive=\"activeLink\" class=\"nav-link underline-from-left\">Portfolio</a>\n\t\t<a href=\"/assets/Emberling Resume.pdf\" target=\"_blank\" class=\"nav-link\">Resume</a>\n\t</span>\n</nav>"
 
 /***/ }),
 
