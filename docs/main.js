@@ -217,7 +217,7 @@ module.exports = ".highlighted {\n    color: #11C7A9;\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  <ng-container *ngFor=\"let chunk of text\">\n    <a *ngIf=\"chunk.route\" [routerLink]=\"chunk.route\" class=\"highlighted\">\n      {{ chunk.str }}\n    </a>\n    <span *ngIf=\"!chunk.route\">\n      {{ chunk.str }}\n    </span>\n  </ng-container>\n</p>\n"
+module.exports = "<p>\n  <ng-container *ngFor=\"let chunk of text\">\n    <a *ngIf=\"chunk.route\" [routerLink]=\"chunk.route\" class=\"highlighted\">\n      {{ chunk.str }}\n    </a>\n    <a *ngIf=\"chunk.url\" [href]=\"chunk.url\" target=\"_blank\" class=\"highlighted\">\n      {{ chunk.str }}\n    </a>\n    <span *ngIf=\"!chunk.route && !chunk.url\">\n      {{ chunk.str }}\n    </span>\n  </ng-container>\n</p>\n"
 
 /***/ }),
 
@@ -566,7 +566,7 @@ module.exports = ".pictureAndExplanation {\n\tdisplay: block;\n\tposition: relat
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"pictureAndExplanation\">\n\t<div class=\"rowWrapper\">\n\t\t<!-- Optional image on the left -->\n\t\t<div class=\"imgWrapper\" *ngIf=\"img\">\n\t\t\t<h3 *ngIf=\"title && screenIsSmall\" class=\"title\">{{title}}</h3>\n\t\t\t<img src=\"./assets/{{img}}.PNG\">\n\t\t\t<a href=\"{{link}}\" target=\"_blank\" *ngIf=\"link\" class=\"imageLink\"></a>\n\t\t</div>\n\n\t\t<!-- Optional text on the right (up to 2 paragraphs) -->\n\t\t<div class=\"textWrapper\" *ngIf=\"text\">\n\t\t\t<h3 *ngIf=\"title && !screenIsSmall\" class=\"title\">{{title}}</h3>\n\t\t\t<p class=\"paragraphText\">{{text}}</p>\n\t\t\t<p class=\"paragraphText\" *ngIf=\"text2\">{{text2}}</p>\n\t\t</div>\n\t</div>\n\t<!-- Large screen footer -->\n\t<div *ngIf=\"!screenIsSmall\" class=\"rowWrapper footer\">\n\t\t<p *ngIf=\"caption\" class=\"caption\">{{caption}}</p>\n\t\t<span></span>\n\t</div>\n</div>"
+module.exports = "<div class=\"pictureAndExplanation\">\n\t<div class=\"rowWrapper\">\n\t\t<!-- Optional image on the left -->\n\t\t<div class=\"imgWrapper\" *ngIf=\"img\">\n\t\t\t<h3 *ngIf=\"title && screenIsSmall\" class=\"title\">{{title}}</h3>\n\t\t\t<img src=\"./assets/{{img}}.PNG\">\n\t\t\t<a href=\"{{link}}\" target=\"_blank\" *ngIf=\"link\" class=\"imageLink\"></a>\n\t\t</div>\n\n\t\t<!-- Optional text on the right (up to 2 paragraphs) -->\n\t\t<div class=\"textWrapper\" *ngIf=\"text\">\n\t\t\t<h3 *ngIf=\"title && !screenIsSmall\" class=\"title\">{{title}}</h3>\n\t\t\t<app-highlighted-paragraph class=\"paragraphText\" [text]=\"paragraph1\"></app-highlighted-paragraph>\n\t\t\t<app-highlighted-paragraph *ngIf=\"paragraph2\" class=\"paragraphText\" [text]=\"paragraph2\"></app-highlighted-paragraph>\n\t\t</div>\n\t</div>\n\t<!-- Large screen footer -->\n\t<div *ngIf=\"!screenIsSmall\" class=\"rowWrapper footer\">\n\t\t<p *ngIf=\"caption\" class=\"caption\">{{caption}}</p>\n\t\t<span></span>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -618,6 +618,29 @@ var PictureAndExplanationComponent = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(PictureAndExplanationComponent.prototype, "paragraph1", {
+        get: function () {
+            if (typeof this.text === 'string') {
+                return [{ str: this.text }];
+            }
+            return this.text;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PictureAndExplanationComponent.prototype, "paragraph2", {
+        get: function () {
+            if (!this.text2) {
+                return undefined;
+            }
+            if (typeof this.text2 === 'string') {
+                return [{ str: this.text2 }];
+            }
+            return this.text2;
+        },
+        enumerable: true,
+        configurable: true
+    });
     PictureAndExplanationComponent.prototype.ngOnInit = function () {
     };
     __decorate([
@@ -630,7 +653,7 @@ var PictureAndExplanationComponent = /** @class */ (function () {
     ], PictureAndExplanationComponent.prototype, "img", void 0);
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
-        __metadata("design:type", String)
+        __metadata("design:type", Object)
     ], PictureAndExplanationComponent.prototype, "text", void 0);
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
@@ -811,7 +834,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<article id=\"assistmentsContainer\">\n  <app-section-header\n  title=\"ASSISTments\"\n  startDate=\"2018\"\n  endDate=\"Present\"\n  myRole=\"Director of Engineering\"\n  description=\"The ASSISTments Foundation is an ed tech nonprofit that empowers math educators with data-driven formative assessment tools so they can best help the students who need it most.\"\n  >\n  </app-section-header>\n\n  <app-picture-and-explanation\n  title=\"E-TRIALS\"\n  img=\"portfolio/assistments/E-TRIALS\"\n  text=\"E-TRIALS is a revolutionary educational research platform that is democratizing learning science by enabling researchers to conduct large scale randomized controlled trials at no cost and without needing to write code. It is currently powering over 15 studies with more than 500 participants each. It’s built using Vue, Vuetify, Java Spring, and Maven\"\n  link=\"https://etrials.assistments.org\"\n  >\n  </app-picture-and-explanation>\n\n  <app-picture-and-explanation\n    title=\"Teacher Experience\"\n    img=\"portfolio/assistments/Teacher Experience - Report\"\n    text=\"Our teacher experience makes it easy to find and curate math work to assign, and to quickly evaluate assessment data to drive lesson planning and class time by answering questions like 'which students are struggling most and on what material?'\"\n    link=\"https://app.assistments.org\"\n  >\n  </app-picture-and-explanation>\n</article>\n"
+module.exports = "<article id=\"assistmentsContainer\">\n  <app-section-header\n  title=\"ASSISTments\"\n  startDate=\"2018\"\n  endDate=\"Present\"\n  myRole=\"Director of Engineering\"\n  description=\"The ASSISTments Foundation is an ed tech nonprofit that empowers math educators with data-driven formative assessment tools so they can best help the students who need it most.\"\n  >\n  </app-section-header>\n\n  <app-picture-and-explanation\n  title=\"E-TRIALS\"\n  img=\"portfolio/assistments/E-TRIALS\"\n  [text]=\"[{str: 'E-TRIALS', url: 'https://etrials.assistments.org'}, {str: 'is a revolutionary educational research platform that is democratizing learning science by enabling researchers to conduct large scale randomized controlled trials at no cost and without needing to write code. It is currently powering over 15 studies with more than 500 participants each. It\\'s built using Vue, Vuetify, Java Spring, and Maven.'}]\"\n  text2=\"My Role: architected the api and database schema, designed the frontend's component and data architecture, initialized the server and client codebases, and lead a team of 5 in full stack development of the MVP. Currently leading the ongoing development as new experimental paradigms are added to the system.\"\n  link=\"https://etrials.assistments.org\"\n  >\n  </app-picture-and-explanation>\n\n  <app-picture-and-explanation\n    title=\"Teacher Experience\"\n    img=\"portfolio/assistments/Teacher Experience - Report\"\n    text=\"Our teacher experience makes it easy to find and curate math work to assign, and to quickly evaluate assessment data to drive lesson planning and class time by answering questions like 'which students are struggling most and on what material?'\"\n    text2=\"My Role: Created the Vuex store architecture (flux pattern), built several pages and key features of the MVP (e.g. search, viewing users' curated content, interactive student data report), and lead the team's agile process (task definition, refinement, assignment, oversight, and troubleshooting). Currently managing ongoing feature development as we improve the teacher experience.\"\n    link=\"https://app.assistments.org\"\n  >\n  </app-picture-and-explanation>\n\n  <app-picture-and-explanation\n  title=\"Student Experience\"\n  img=\"portfolio/assistments/Student Workbench - Multi Cloze\"\n  text=\"Our Student Experience provides students the opportunity to practice their skills in a low stakes formative environment, supported by adaptive interventions such as individualized hints, and “redo” problems to retry the problems students have difficulty with.'\"\n  text2=\"My Role: Designed integration and e2e testing frameworks with Cypress running in github actions and AWS CodePipeline, created stateful and responsive navigation, created integration with the experiment system powered by E-TRIALS, and managed the process of defining, refining, and assigning work throughout development of the MPV. Currently managing ongoing feature development as we continue to improve the student experience.\"\n  link=\"https://student.assistments.org/preview/problemSet/PSBE34W\"\n>\n</app-picture-and-explanation>\n</article>\n"
 
 /***/ }),
 
@@ -874,7 +897,7 @@ module.exports = "h2, h3, #summary {\n\ttext-align: center;\n}\n\nh2 {\n\tfont-s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<article id=\"cuttleContainer\">\n\t<app-section-header\n\t\ttitle=\"cuttle.cards\"\n\t\tstartDate=\"2017\"\n\t\tendDate=\"Present\"\n\t\tmyRole=\"Creator and Lead Maintainer\"\n\t\tdescription=\"Cuttle is the oldest battle card game, and it’s played with a regular 52-card deck. I built cuttle.cards to empower people to play my favorite game online, and to create a space for technical professionals to develop their skills by contributing to an open source project that’s actively used by real people.\"\n\t>\n\t</app-section-header>\n\n\t<app-picture-and-explanation\n\t\ttitle=\"Architecture\"\n\t\timg=\"portfolio/cuttle/three-dialog\"\n\t\ttext=\"cuttle.cards is an open source, real-time, full stack web app, built with a nodejs backend using the sailsjs framework, a Vue 3 SPA using the Vuetify component library, and a postgresql database. It’s tested end to end with cypress, and unit tested with vitest. You can check out the code here. It has all the essential bells and whistles of full stack web development at a Goldilocks level of complexity that is ideal for learning how to make robust web apps in an authentic environment with a real user base.\"\n\t\tlink=\"https://cuttle.cards/rules\"\n\t>\n\t</app-picture-and-explanation>\n\n\t<app-picture-and-explanation\n\t\ttitle=\"Learn By Doing\"\n\t\timg=\"portfolio/cuttle/Cuttle with Cypress\"\n\t\ttext=\"Since its inception, I have used my work on cuttle.cards to drive targeted skill development that aligns with my career goals. As the project matured and my own trajectory brought me to leading teams of software engineers, I’ve made it my mission to use Cuttle as a medium through which to teach technical skills to anyone in learning them.\"\n\t\ttext2=\"Cuttle is simple enough to be accessible at any level of development, and deep enough to enable learners to cultivate programming skills in any layer of the full stack. The issue backlog is labeled and curated with improvements to user and developer experience in different areas and spanning various levels of complexity, and the core team works with contributors to help them find and complete progressively more complex and valuable contributions that align their skills and interests\"\n\t\tlink=\"https://cuttle.cards/rules\"\n\t>\n\t</app-picture-and-explanation>\n</article>"
+module.exports = "<article id=\"cuttleContainer\">\n\t<app-section-header\n\t\ttitle=\"cuttle.cards\"\n\t\tstartDate=\"2017\"\n\t\tendDate=\"Present\"\n\t\tmyRole=\"Creator and Lead Maintainer\"\n\t\tdescription=\"Cuttle is the oldest battle card game, and it’s played with a regular 52-card deck. I built cuttle.cards to empower people to play my favorite game online, and to create a space for technical professionals to develop their skills by contributing to an open source project that’s actively used by real people.\"\n\t>\n\t</app-section-header>\n\n\t<app-picture-and-explanation\n\t\ttitle=\"Architecture\"\n\t\timg=\"portfolio/cuttle/three-dialog\"\n\t\t[text]=\"[{str: 'cuttle.cards', url: 'https://cuttle.cards'}, {str: 'is an open source, real-time, full stack web app, built with a nodejs backend using the sailsjs framework, a Vue 3 SPA using the Vuetify component library, and a postgresql database. It’s tested end to end with cypress, and unit tested with vitest. You can check out the code'}, {str: 'here. ', url: 'https://github.com/cuttle-cards/cuttle'}, {str: 'It has all the essential bells and whistles of full stack web development at a Goldilocks level of complexity that is ideal for learning how to make robust web apps in an authentic environment with a real user base.'}]\"\n\t\tlink=\"https://cuttle.cards/rules\"\n\t>\n\t</app-picture-and-explanation>\n\n\t<app-picture-and-explanation\n\t\ttitle=\"Learn By Doing\"\n\t\timg=\"portfolio/cuttle/Cuttle with Cypress\"\n\t\t[text]=\"[{str: 'Since its inception, I have used my work on'}, {str: 'cuttle.cards', url: 'https://cuttle.cards'}, {str: 'to drive targeted skill development that aligns with my career goals. As the project matured and my own trajectory brought me to leading teams of software engineers, I’ve made it my mission to use Cuttle as a medium through which to teach technical skills to anyone interested in learning them.'}]\"\n\t\t[text2]=\"[{str: 'Cuttle is simple enough to be accessible at any level of development, and deep enough to enable learners to cultivate programming skills in any layer of the full stack. The'}, {str: 'issue backlog', url: 'https://github.com/cuttle-cards/cuttle/issues'}, {str: 'is labeled and curated with improvements to user and developer experience in different areas spanning various levels of complexity, and the core team works with contributors to help them find and complete progressively more complex and valuable contributions that align their skills and interests with ways to add value to our growing community.'}]\"\n\t\tlink=\"https://cuttle.cards/rules\"\n\t>\n\t</app-picture-and-explanation>\n</article>"
 
 /***/ }),
 

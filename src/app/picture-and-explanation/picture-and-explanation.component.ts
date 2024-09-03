@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TextWithMetaData } from '../about/highlighted-paragraph/highlighted-paragraph.component';
 
 @Component({
   selector: 'app-picture-and-explanation',
@@ -8,11 +9,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PictureAndExplanationComponent implements OnInit {
 	@Input() title: string;
 	@Input() img: string;
-	@Input() text: string;
+	@Input() text: string | TextWithMetaData[];
 	@Input() text2: string;
 	@Input() link: string;
 	@Input() caption: string;
 	@Input() smallScreenCaption: string;
+
 	get footerVisibility() {
 		if (window.innerWidth > 1000) {
 			return 'visible';
@@ -27,6 +29,24 @@ export class PictureAndExplanationComponent implements OnInit {
 			return false;
 		}
 	}
+
+	get paragraph1(): TextWithMetaData[] {
+		if (typeof this.text === 'string') {
+			return [{str: this.text}];
+		}
+		return this.text;
+	}
+
+	get paragraph2(): TextWithMetaData[] | undefined {
+		if (!this.text2) {
+			return undefined;
+		}
+		if (typeof this.text2 === 'string') {
+			return [{str: this.text2}];
+		}
+		return this.text2;
+	}
+
 	constructor() { }
 	ngOnInit() {
 	}

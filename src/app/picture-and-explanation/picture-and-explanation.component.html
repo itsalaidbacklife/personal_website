@@ -10,8 +10,8 @@
 		<!-- Optional text on the right (up to 2 paragraphs) -->
 		<div class="textWrapper" *ngIf="text">
 			<h3 *ngIf="title && !screenIsSmall" class="title">{{title}}</h3>
-			<p class="paragraphText">{{text}}</p>
-			<p class="paragraphText" *ngIf="text2">{{text2}}</p>
+			<app-highlighted-paragraph class="paragraphText" [text]="paragraph1"></app-highlighted-paragraph>
+			<app-highlighted-paragraph *ngIf="paragraph2" class="paragraphText" [text]="paragraph2"></app-highlighted-paragraph>
 		</div>
 	</div>
 	<!-- Large screen footer -->
