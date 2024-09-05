@@ -49,18 +49,6 @@
 			width: 100%;
 			border-radius: 8px;
 		}
-		.imageLink {
-			display: inline-block;
-			position: absolute;
-			height: 100%;
-			width: 100%;
-			margin: 0px;
-			left: 0%;
-			bottom: 0%;
-			border-radius: 8px;
-			padding: 0px;
-			opacity: .85;
-		}
 
 	.textWrapper {
 		display: inline-block;

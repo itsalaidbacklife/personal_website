@@ -3,8 +3,13 @@
 		<!-- Optional image on the left -->
 		<div class="imgWrapper" *ngIf="img">
 			<h3 *ngIf="title && screenIsSmall" class="title">{{title}}</h3>
-			<img src="./assets/{{img}}.PNG">
-			<a href="{{link}}" target="_blank" *ngIf="link" class="imageLink"></a>
+
+			<a href="{{link}}" target="_blank" *ngIf="link" class="image-link-wrapper">
+				<img src="./assets/{{img}}.PNG" class="image-link">
+			</a>
+
+			<img *ngIf="!link" src="./assets/{{img}}.PNG">
+
 		</div>
 
 		<!-- Optional text on the right (up to 2 paragraphs) -->
