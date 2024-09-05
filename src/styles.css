@@ -105,7 +105,7 @@ a {
   height: 100%;
   z-index: -1;
   left: 0;
-  background-color: #fff; /* Color of the border */
+  background-color: #EEE; /* Color of the border */
   border-radius: 16px;
   transition: transform 0.3s ease-in-out; /* Smooth transition of width */
 }
